@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledger Documents - Ledger-powered document creation for the decentralized world</title>
+    <meta name="description"
+        content="Build, protect, and verify important documents. One identity. One chain. Infinite trust.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/OperateID/common.css">
+    <link rel="stylesheet" href="Styles/OperateID/listing.css">
+    <link rel="stylesheet" href="Styles/OperateID/search.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="images/Logos/Ledger_logo.png" alt="Ledger Documents Logo">
+                <div>
+                    <div class="logo-text">Ledger Documents</div>
+                    <div class="logo-subtext">Document Collaboration Platform</div>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#app-product-listing-section">Showcase</a></li>
+
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    Trusted Infrastructure for Digital Proof
+                </div>
+                <h1>
+                    <span class="hero-highlight">Ledger-powered</span> document creation for the decentralized
+                    world.
+                </h1>
+                <p class="hero-subtitle">
+                    Build, protect, and verify important documents. One identity. One chain. Infinite trust.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://dev.azure.com/HelpDocs/Qoboto.com/_wiki/wikis/Qoboto.com.wiki/886"
+                        class="app-help btn btn-primary" target="_blank"> <i class="fas fa-rocket"></i> Get Started</a>
+                    <a href="https://dev.azure.com/HelpDocs/Qoboto.com/_wiki/wikis/Qoboto.com.wiki/886"
+                        class="app-help btn btn-secondary" target="_blank"> <i class="fas fa-calendar"></i> Demo</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="document-mockup-1">
+                    <img src="images/Animations/Home.gif" alt="Document Mockup" style="max-width:600px;;" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Search Section -->
+    <section id="search" class="search-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Document Lookup</div>
+                <h2>Find & Verify Documents</h2>
+                <p>Search and verify documents on the blockchain with our powerful lookup tools</p>
+                <div>
+                    <a href="https://dev.azure.com/HelpDocs/Qoboto.com/_wiki/wikis/Qoboto.com.wiki/886"
+                        class="app-help btn btn-secondary" target="_blank">Learn More</a>
+                    <br>
+                    <select class="select-network">
+                        <option value="" selected>Production</option>
+                        <option value="kermit">Kermit</option>
+                    </select>
+                </div>
+            </div>
+            <div class="search-grid">
+                <div class="search-card" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fas fa-search"></i> Find Document By Identity </h4>
+                    <p>Search for documents using organization identity format</p>
+                    <input type="text" class="text_identity search-input" name="identity"
+                        placeholder="Identity of organization. Eg: binoy1.acme/foundationcerts">
+                    <div class="right-panel">
+                        <a href_template="https://@identityName.LedgerDocuments.com/@identityPath?@network"
+                            class="btn btn-primary member-link-app-identity-url" target="_blank">Find Document</a>
+                        <br>
+                        <br>
+                    </div>
+                    <a class="member-link-app-identity-qr-code" href="#" target="_blank">Find My QR Code</a>
+                </div>
+                <div class="search-card" data-aos="fade-up" data-aos-delay="200">
+                    <h4><i class="fas fa-history"></i> Find Document Version</h4>
+                    <p>Find previous version of a document by record ID</p>
+                    <input type="text" class="text_record_id search-input" name="recordId"
+                        placeholder="Type your form data record by id. Eg: a3355bd9e4e5044529093b0534fc1b8ea297995241cd5226670912c5300b9451">
+                    <div class="right-panel">
+                        <a href_template="https://record.LedgerDocuments.com/?search-url-data-entry-id=@record-id@network"
+                            class="btn btn-primary member-link-app-record-id" target="_blank">Find Version</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section app-product-listing-section" id="app-product-listing-section">
+        <div class="app-product-listing-contatiner container" id="app-product-listing-contatiner">
+            <br><br>
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Document Showcase</div>
+                <h2>Recent & Featured Documents</h2>
+                <p>Explore recently created documents and popular featured documents submitted by users</p>
+            </div>
+            <div class="section-header" data-aos="fade-up">
+                <h3>Recent Documents</h3>
+            </div>
+            <div class="app-product-listing-holder app-product-listing-holder-recent">
+                <div class="app-product-listing-content listing-grid">
+                    <img src="Images/Animations/loading.gif"
+                        style="height: 200px;width: 100%; margin-top: 20px;border-radius: 5px;;">
+                </div>
+            </div>
+            <div class="section-header" data-aos="fade-up">
+                <h3>Featured Documents</h3>
+            </div>
+            <div class="app-product-listing-holder app-product-listing-holder-top">
+                <div class="app-product-listing-content listing-grid">
+                    <img src="Images/Animations/loading.gif"
+                        style="height: 200px;width: 100%; margin-top: 20px;border-radius: 5px;;">
+                </div>
+            </div>
+        </div>
+        <div class="app-product-listing-templates w-hidden" id="app-product-listing-templates">
+            <div class="card-template-standard-mini" id="card-template-standard-mini">
+                <div class="listing-card document-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                    </div>
+                    <span class="item-logo" style="background-image: url('{@logo}');"></i></span>
+                    <span class="card-header-text">
+                        <h3 class="item-card-title">{@name}</h3>
+                    </span>
+                    <div class="listing-badge item-card-visit"> <a href="{@appUrl}" target="_blank"
+                            class="btn btn-primary">Visit</a>
+
+                    </div>
+                    <div class="card-body"
+                        style="background-image: url('{@imageurl}'); background-size: cover; background-position: center;font-size:12px; ;">
+                        <p class="item-card-product-code">{@code}</p>
+                        <p class="item-card-description">{@shortDescription}</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="item-card-visit-testnet"> <a href="{@appUrlTestNet}" target="_blank">Visit Test
+                                Net</a>
+                            <p class="item-card-subtitle" style="font-size: 10px;;">Created using Document Ledger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="image-section">
+        <div class="section-title"></div>
+        <div class="image-grid">
+            <!-- Image Card 1 -->
+            <div class="image-card">
+                <img src="images/Animations/LogoAnimation1.gif" alt="Chat-GPT-Image-Jun-27-2025-01-50-04-AM"
+                    border="0"></a>
+                <h3>Secure Blockchain Ledger</h3>
+                <p>
+                    Your secured digital document protected by a blockchain node network.
+                    It represents on-chain identity, permanent record, and Web3 compliance.
+                </p>
+                <div class="image-quote">“Security is not a feature — it's a foundation.”</div>
+            </div>
+
+            <!-- Image Card 2 -->
+            <div class="image-card">
+                <img src="images/Animations/LogoAnimation2.gif" alt="cyber" border="0"></a>
+                <h3>Distributed Ledger Infrastructure</h3>
+                <p>
+                    Based or Accumulate, a distributed blockchain system with smart signatures,
+                    timestamping, and immutable verification across interconnected nodes.
+                </p>
+                <div class="image-quote">“Build decentralized. Trust centralized logic.”</div>
+            </div>
+        </div>
+    </section>
+    <!-- Technology Stack -->
+    <section id="technology" class="tech-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Technology Stack</div>
+                <h2>Built with Enterprise-Grade Technology</h2>
+                <p>Multi-chain, cross-cloud, fully composable infrastructure for maximum security and scalability
+                </p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-database"></i>
+                    <h3>Manage Store</h3>
+                    <p>Cloud | Web3</p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Manage Attestation</h3>
+                    <p>Accumulate + Rules Engine</p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fab fa-ethereum"></i>
+                    <h3>EVM</h3>
+                    <p>Account Abstraction</p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud</h3>
+                    <p>AWS + Azure</p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-sitemap"></i>
+                    <h3>Schema Models</h3>
+                    <p>Discovery + Meta-L</p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-plug"></i>
+                    <h3>Integrations</h3>
+                    <p>Operate ID | IPFS | DID</p>
+                </div>
+            </div>
+
+            <div class="section-header" data-aos="fade-up" style="margin-top: 4rem;">
+                <h3>Key Integrations</h3>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Operate ID</h3>
+                    <p><a href="https://www.OperateId.com" target="_blank"
+                            style="color: var(--accent-cyan);">OperateId.com</a></p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-cog"></i>
+                    <h3>Operate Crypto</h3>
+                    <p><a href="https://www.OperateCrypto.com" target="_blank"
+                            style="color: var(--accent-cyan);">OperateCrypto.com</a></p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-link"></i>
+                    <h3>Accumulate Network</h3>
+                    <p><a href="https://www.AccumulateNetwork.io" target="_blank"
+                            style="color: var(--accent-cyan);">AccumulateNetwork.io</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Types -->
+    <section class="types-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Document Types</div>
+                <h2>Create Any Type of Document</h2>
+                <p>All stored on-chain with full versioning and identity traceability</p>
+            </div>
+            <div class="types-grid">
+                <div class="type-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>Minutes</h3>
+                    <p>Record meetings with multi-sig approval from all participants</p>
+                </div>
+                <div class="type-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Announcements</h3>
+                    <p>Publish internal/external notices with timestamp verification</p>
+                </div>
+                <div class="type-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-newspaper"></i>
+                    <h3>Press Releases</h3>
+                    <p>Public-facing official updates with authenticity verification</p>
+                </div>
+                <div class="type-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-book"></i>
+                    <h3>Diaries</h3>
+                    <p>Personal or business journaling with privacy controls</p>
+                </div>
+                <div class="type-card" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Status Reports</h3>
+                    <p>Project or team performance logs with data integrity</p>
+                </div>
+                <div class="type-card" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Contracts</h3>
+                    <p>Legally binding, multi-signed agreements with smart contract integration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture -->
+    <section id="architecture" class="architecture-section">
+        <div class="container">
+            <br><br>
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Architecture</div>
+                <h2> Ledger Documents Architecture</h2>
+                <div class="ledger-architecture-grid">
+                    <div class="ledger-box top-left">Document <br>Storage</div>
+                    <div class="ledger-box top-right">Multi-Sig <br>Signing</div>
+                    <div class="ledger-box center">Ledger<br>Documents</div>
+                    <div class="ledger-box bottom-left">IPFS or <br>Blockchain</div>
+                    <div class="ledger-box bottom-right">Custom <br>Templates</div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Our Ecosystem</div>
+                <h2></h2>
+                <p>Trusted by leaders in Web3 and blockchain technology, powering the future of documentation</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="partner-logo">
+                        <img src="images/Logos/accumulate_foundation.png" alt="Accumulate Foundation">
+                    </div>
+                    <h3>Accumulate</h3>
+                    <p><strong>CROWN PARTNER</strong><br>Layer 1 Blockchain</p>
+                    <a href="https://www.AccumulateNetwork.io" target="_blank">AccumulateNetwork.io</a>
+                </div>
+                <div class="partner-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="partner-logo">
+                        <img src="images/Logos/operatecrypo_logo.png" alt="Operate Crypto">
+                    </div>
+                    <h3>Operate Crypto</h3>
+                    <p><strong>HOLDING ORGANIZATION</strong><br>Web3 Infrastructure Provider</p>
+                    <a href="https://OperateCrypto.com" target="_blank">OperateCrypto.com</a>
+                </div>
+                <div class="partner-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="partner-logo">
+                        <img src="images/Logos/DefiDevs.png" alt="DeFi Devs">
+                    </div>
+                    <h3>DeFi Devs</h3>
+                    <p><strong>GO-TO-MARKET PARTNER</strong><br>DeFi Development & Strategy</p>
+                    <a href="https://defidevs.io" target="_blank">defidevs.io</a>
+                </div>
+                <div class="partner-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="partner-logo">
+                        <img src="images/Logos/Logo_lv8rlabs.png" alt="LV8RLABS">
+                    </div>
+                    <h3>LV8RLABS</h3>
+                    <p><strong>GO-TO-MARKET PARTNER</strong><br>Marketing Partner</p>
+                    <a href="https://LV8RLABS.com" target="_blank">LV8RLABS.com</a>
+                </div>
+                <div class="partner-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="partner-logo">
+                        <img src="images/Logos/Logo_leonardmcdowell.png" alt="Leonard McDowell">
+                    </div>
+                    <h3>Leonard McDowell</h3>
+                    <p><strong>GO-TO-MARKET PARTNER</strong><br>Enterprise Advisory</p>
+                    <a href="https://leonardmcdowell.com" target="_blank">leonardmcdowell.com</a>
+                </div>
+                <div class="partner-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="partner-logo">
+                        <img src="images/Logos/lighthouse_logo.jpeg" alt="Lighthouse">
+                    </div>
+                    <h3>Lighthouse</h3>
+                    <p><strong>IPFS PINNING SERVICE</strong><br>IPFS Pinning Provider</p>
+                    <a href="https://lighthouse.storage" target="_blank">lighthouse.storage</a>
+                </div>
+                <div class="partner-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="partner-logo">
+                        <img src="images/Logos/presentcrypto_logo.jpeg" alt="Present Crypto">
+                    </div>
+                    <h3>Present Crypto</h3>
+                    <p><strong>PROMOTIONS PARTNER</strong><br>Marketing & Community Growth</p>
+                    <a href="https://PresentCrypto.com" target="_blank">PresentCrypto.com</a>
+                </div>
+                <div class="partner-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="partner-logo">
+                        <img src="images/Logos/cubane logo.png" alt="Cubane">
+                    </div>
+                    <h3>Cubane</h3>
+                    <p><strong>LAYER ONE INTEGRATION</strong><br>Blockchain Infrastructure</p>
+                    <a href="https://cubane.space" target="_blank">cubane.space</a>
+                </div>
+                <div class="partner-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="partner-logo">
+                        <i class="fas fa-hammer" style="font-size: 2rem; color: var(--accent-cyan);"></i>
+                    </div>
+                    <h3>BuildOnChain</h3>
+                    <p><strong>HACKATHON PARTNER</strong><br>Developer Community</p>
+                    <a href="#" target="_blank">BuildOnChain</a>
+                </div>
+            </div>
+
+            <div class="section-header" data-aos="fade-up" style="margin-top: 4rem;">
+                <h3>Partnership Opportunities</h3>
+                <p>We are actively looking to collaborate with:</p>
+            </div>
+            <div class="types-grid">
+                <div class="type-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-robot"></i>
+                    <h3>Blockchain + AI Organizations</h3>
+                    <p>DEPIN and AI-powered blockchain solutions</p>
+                </div>
+                <div class="type-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-fingerprint"></i>
+                    <h3>DID Protocols</h3>
+                    <p>Decentralized Identity specialized organizations</p>
+                </div>
+                <div class="type-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-gavel"></i>
+                    <h3>Legal Tech Companies</h3>
+                    <p>KYC, AML, eNotary solutions</p>
+                </div>
+                <div class="type-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-building"></i>
+                    <h3>RWA Startups</h3>
+                    <p>Real World Asset tokenization tools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge" style="color: white;">Get in Touch</div>
+                <h2>Join the Decentralized Future</h2>
+                <p>Follow us for updates and connect with our community</p>
+            </div>
+
+            <div class="social-links" data-aos="fade-up">
+                <a href="https://www.youtube.com/@operatecrypto" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://twitter.com/OperateID" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://discord.gg/F6NjA5dzZV" target="_blank" aria-label="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://github.com/operatecrypto" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/operatecrypto" target="_blank" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <div class="footer-quote" data-aos="fade-up">
+                "Information isn't powerful—verified information is."
+            </div>
+            <div class="footer-links" data-aos="fade-up">
+                <a href="https://www.OperateCrypto.com" target="_blank">OperateCrypto.com</a>
+                <a href="https://www.AccumulateNetwork.io" target="_blank">AccumulateNetwork.io</a>
+                <a href="https://www.OperateId.com" target="_blank">OperateID.com</a>
+                <a href="https://www.IpfsServer.com" target="_blank">IpfsServer.com</a>
+                <a href="https://www.BizFirstAi.com" target="_blank">BizFirstAi.com</a>
+
+            </div>
+
+            <div class="footer-bottom" style="color: rgb(158, 193, 223);">
+                <p>&copy; 2025 Ledger Documents</p>
+                <p>Collaborate with trust. Publish with proof.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/OperateID/common.js"></script>
+    <script src="js/OperateID/operateId.js"></script>
+    <script src="js/OperateID/productLlisting.js"></script>
+    <script src="js/OperateID/productLlistingExtra.js"></script>
+</body>
+
+</html>

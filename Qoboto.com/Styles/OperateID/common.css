@@ -1,0 +1,6 @@
+.w-hidden {
+    display: none;
+}   
+.right-panel{
+display:flex; text-align: right;justify-content: flex-end;
+}

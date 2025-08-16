@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoboto - Decentralized Website Builder</title>
+    <meta name="description"
+        content="Build your Web3 identity with Qoboto - Create decentralized websites with on-chain storage, IPFS media, and custom templates">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/OperateID/common.css">
+    <link rel="stylesheet" href="Styles/OperateID/listing.css">
+    <link rel="stylesheet" href="Styles/OperateID/search.css">
+</head>
+
+<body>
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <div class="logo-container1">
+                    <img src="Images/MyLogos/qoboto_logo.png" alt="Qoboto" style="width: auto; height: 40px;">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#search">Showcase</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#templates">Templates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partners">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image:url(images/bg/image3.png) ;color:white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>Your brand. Your world. One link.</h1>
+                        <p class="hero-subtitle">Connect your audience to your content, store, socials, and more — all
+                            from one smart link that grows with you.</p>
+                        <div class="cta-buttons">
+                            <button class="btn btn-primary-custom">
+                                <i class="fas fa-rocket me-2"></i>Go to App
+                            </button>
+                            <button class="btn btn-secondary-custom">
+                                <i class="fas fa-arrow-right me-2"></i>Explore Web Sites
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <br><br><br>
+                    <img src="Images/Animations/intro.gif" style="width: 100%; margin-top: 20px;border-radius: 5px;;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section app-product-listing-section" id="app-product-listing-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="listing-card search-card">
+                        <div class="card-header">                         
+                            <span class="logo" style="width: 30px; height: 30px; background-image: url('{@logo}'); background-size: cover;"></span>
+                            <span class="card-header-text">
+                                <h5 class="card-title">Find your website</h5>
+                            </span>
+                            <div class="right-panel"> 
+                                <select class="select-network">
+                                    <option value="" selected>Production</option>
+                                    <option value="kermit">Kermit</option>
+                                </select> 
+                                <a href="https://dev.azure.com/HelpDocs/Qoboto.com/_wiki/wikis/Qoboto.com.wiki/886" class="app-help" target="_blank">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <input type="text" class="text_identity" name="identity"
+                                placeholder="Identity of organization. Eg: binoy1.acme/foundationcerts" value=""
+                                style="min-width:120px;">
+                                <div class="right-panel">
+                                    <a href_template="https://@identityName.Qoboto.com/@identityPath?@network"
+                                        class="btn btn-primary member-link-app-identity-url" target="_blank"
+                                        style="width:55px;margin-right: 5px ;">Find</a>
+                                    <a class="member-link-app-identity-qr-code btn btn-primary" href="#" target="_blank"
+                                        style="width:150px;">Show QR
+                                        Code</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="app-product-listing-contatiner" id="app-product-listing-contatiner">
+                        <div class="app-product-listing-holder app-product-listing-holder-recent">
+                            <div class="app-product-listing-header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h1 class="text-center mb-4">Recent websites</h1>
+                                        <p class="text-center mb-4">
+                                            Create your web site and showcase them here.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-product-listing-content listing-grid">
+                                <img src="Images/Animations/loading.gif"
+                                    style="height: 200px;width: 100%; margin-top: 20px;border-radius: 5px;;">
+                            </div>
+                        </div>
+                        <div class="app-product-listing-holder app-product-listing-holder-top">
+                            <div class="app-product-listing-header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h1 class="text-center mb-4">Featured Websites</h1>
+                                        <p class="text-center mb-4">
+                                            Top websites published by app users.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-product-listing-content listing-grid">
+                            </div>
+                        </div>
+                        <div class="app-product-listing-templates w-hidden" id="app-product-listing-templates">
+                            <div class="card-template-standard-mini" id="card-template-standard-mini">
+                                <div class="listing-card">
+                                    <div class="card-header">
+                                        <div class="listing-badge"> <a href="{@appUrl}" target="_blank">Visit</a></div>
+                                        <span class="logo"
+                                            style="width: 30px; height: 30px; background-image: url('{@logo}'); background-size: cover;"></span>
+                                        <span class="card-header-text">
+                                            <h5 class="card-title">{@name}</h5>
+                                        </span>
+                                        <p class="card-text" style="font-size: 10px;;">Created using Qoboto</p>
+                                    </div>
+                                    <div class="card-body"
+                                        style="background-image: url('{@imageurl}'); background-size: cover; background-position: center;font-size:12px; ;">
+                                        <p>{@code}</p> <p class="">{@shortDescription}</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class=""> <a href="{@appUrlTestNet}" target="_blank">Visit Test Net</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase scroll-animate"
+        style="background-image:url(images/bg/image3.png);color:white !important;">
+        <div class="container">
+            <h2 class="section-title txt-white">Ideas that Matter</h2>
+            <p class="section-subtitle txt-white">Build your decentralized social profile. Create your business website.
+                Unbelievably affordable.</p>
+            <div class="showcase-grid">
+                <div class="showcase-card">
+                    <div class="showcase-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1.JPG-CCR9ldXFYkrHp4jMGj7MYuy01ANJRM.jpeg"
+                            alt="Dashboard Interface" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="showcase-badge">Studio</div>
+                    </div>
+                    <div class="showcase-content">
+                        <h5>Site Design Studio</h5>
+                        <p class="text-muted">A studio for editing and managing your decentralized websites</p>
+                        <small class="text-muted">Built on Accumulate</small>
+                    </div>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2%20create%20webpage%20option.JPG-7fxbm3J4ahGioDqGAGiWy76Y2sGqgm.jpeg"
+                            alt="Page Creation" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="showcase-badge">Templates</div>
+                    </div>
+                    <div class="showcase-content">
+                        <h5>Page Templates</h5>
+                        <p class="text-muted">Choose from multiple page types and customization options</p>
+                        <small class="text-muted">You may create your own templates</small>
+                    </div>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3.JPG-LFghXIMBSGSYXu7MKmEj2eHejFYWU2.jpeg"
+                            alt="Advanced Settings" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="showcase-badge">Pro</div>
+                    </div>
+                    <div class="showcase-content">
+                        <h5>Multi-sig</h5>
+                        <p class="text-muted">You may ask someone else to edit your web site</p>
+                        <small class="text-muted">Delegate Access</small>
+                    </div>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4%20Edit.JPG-SudfkgDguQ2EvinSy9HJKpgEldxbge.jpeg"
+                            alt="Customization" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="showcase-badge">Featured</div>
+                    </div>
+                    <div class="showcase-content">
+                        <h5>Visual Customization</h5>
+                        <p class="text-muted">Customize themes, backgrounds, and visual elements</p>
+                        <small class="text-muted">Design Studio</small>
+                    </div>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5%20Create%20Website%20option.JPG-vD4LdiHkUXVMYtQ3NX8dklBNWNdDe2.jpeg"
+                            alt="Website Types" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="showcase-badge">Popular</div>
+                    </div>
+                    <div class="showcase-content">
+                        <h5>Website Templates</h5>
+                        <p class="text-muted">Multiple website types for different use cases</p>
+                        <small class="text-muted">Template Collection</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="Images/Animations/Designer.gif" style="width: 100%;">
+    <!-- Features Section -->
+    <section id="features" class="features scroll-animate">
+        <div class="container">
+            <h2 class="section-title">Powerful Web3 Features</h2>
+            <p class="section-subtitle">Everything you need to build, deploy, and manage your decentralized web
+                presence.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h5>Multi-Sig Editing</h5>
+                    <p class="text-muted">Collaborative editing with team consensus using multi-signature protocols for
+                        secure content management.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h5>On-Chain Storage</h5>
+                    <p class="text-muted">Store your website data directly on the blockchain for permanent,
+                        censorship-resistant hosting.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h5>IPFS Integration</h5>
+                    <p class="text-muted">Decentralized storage for images and videos using IPFS for fast, distributed
+                        content delivery.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h5>Custom Templates</h5>
+                    <p class="text-muted">Create and share custom website templates with the community or use existing
+                        ones.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h5>Cost Effective</h5>
+                    <p class="text-muted">Decentralized hosting eliminates traditional hosting fees and reduces
+                        operational costs.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h5>Identity Attached</h5>
+                    <p class="text-muted">Websites are verifiably yours using unique acc://yourname.acme identity
+                        system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Gallery -->
+    <section id="templates" class="templates scroll-animate">
+        <div class="container">
+            <h2 class="section-title">Template Gallery</h2>
+            <p class="section-subtitle">Choose from our curated collection of professional Web3 website templates.</p>
+            <div class="showcase-grid">
+                <div class="showcase-card">
+                    <div class="showcase-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="showcase-badge">Custom</div>
+                        <img src="Images/bg/image3.png" style="width: 100%;">
+
+                    </div>
+                    <div class="showcase-content">
+                        <h5>Bring Your Own Template</h5>
+                        <p class="text-muted">Create your own template and publish and earn</p>
+                    </div>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="showcase-badge">Social Profile</div>
+                        <img src="Images/Animations/Studio.gif" style="width: 100%;">
+
+                    </div>
+                    <div class="showcase-content">
+                        <h5>Establish Trust</h5>
+                        <p class="text-muted">Unlike LinkTree, Qoboto is driven from your identity. All te links you
+                            have provided is trust established</p>
+                    </div>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="showcase-badge">Business</div>
+                        <img src="Images/bg/image2.png" style="width: 100%;">
+
+                    </div>
+                    <div class="showcase-content">
+                        <h5>Create Webiste</h5>
+                        <p class="text-muted">Your business websites is stored on blockchain. Permanent!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners scroll-animate">
+        <div class="container">
+            <h2 class="section-title">Trusted Partners</h2>
+            <p class="section-subtitle">Building the future of Web3 together with industry leaders and innovators.</p>
+
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <img src="Images/Logos/accumulate_foundation.png" alt="Accumulate" class="partner-logo">
+                    <h6>Accumulate</h6>
+                    <p class="text-muted small">Layer 1 Blockchain</p>
+                </div>
+
+                <div class="partner-card">
+                    <img src="Images/Logos/operatecrypo_logo.png" alt="Operate Crypto" class="partner-logo">
+                    <h6>Operate Crypto</h6>
+                    <p class="text-muted small">Wallet Provider</p>
+                </div>
+                <div class="partner-card">
+                    <img src="Images/Logos/operatecrypo_logo.png" alt="Operate Crypto" class="partner-logo">
+                    <h6>Operate ID</h6>
+                    <p class="text-muted small">ID Provider</p>
+                </div>
+                <div class="partner-card">
+                    <img src="Images/Logos/DefiDevs.png" alt="DeFi Devs" class="partner-logo">
+                    <h6>DeFi Devs</h6>
+                    <p class="text-muted small">Development Partner</p>
+                </div>
+
+                <div class="partner-card">
+                    <img src="Images/Logos/Logo_lv8rlabs.png" alt="LV8RLABS" class="partner-logo">
+                    <h6>LV8RLABS</h6>
+                    <p class="text-muted small">Innovation Lab</p>
+                </div>
+
+                <div class="partner-card">
+                    <img src="Images/Logos/Logo_leonardmcdowell.png" alt="Leonard McDowell" class="partner-logo">
+                    <h6>Leonard McDowell</h6>
+                    <p class="text-muted small">Strategic Advisor</p>
+                </div>
+
+                <div class="partner-card">
+                    <img src="Images/Logos/lighthouse_logo.jpeg" alt="Lighthouse" class="partner-logo">
+                    <h6>Lighthouse</h6>
+                    <p class="text-muted small">IPFS Storage</p>
+                </div>
+
+                <div class="partner-card">
+                    <img src="Images/Logos/presentcrypto_logo.jpeg" alt="Present Crypto" class="partner-logo">
+                    <h6>Present Crypto</h6>
+                    <p class="text-muted small">Marketing Partner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Enhanced Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+            <p data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem; margin-bottom: 1rem;">You can find all
+                updates on our social media channels</p>
+
+            <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://www.youtube.com/@operatecrypto" class="social-link" aria-label="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.3 7.3c0-.2-.3-1.8-1-2.5-.9-1-1.9-1.1-2.4-1.1h-.1c-3.1-.2-7.7-.2-7.8-.2 0 0-4.7 0-7.8.2h-.1c-.5 0-1.5.1-2.4 1.1-.7.8-1 2.4-1 2.6 0 .1-.2 1.9-.2 3.8v1.7c0 1.9.2 3.7.2 3.8 0 .2.3 1.8 1 2.5.8.9 1.8 1 2.4 1.1h.3c1.8.2 7.3.2 7.5.2 0 0 4.7 0 7.8-.2h.1c.5-.1 1.5-.2 2.4-1.1.7-.8 1-2.4 1-2.6 0-.1.2-1.9.2-3.8v-1.7c.1-1.8-.1-3.7-.1-3.8zm-7.4 4.9-6 3.2c-.1 0-.1.1-.2.1s-.2 0-.2-.1c-.1-.1-.2-.2-.2-.4V8.5c0-.2.1-.3.2-.4s.3-.1.5 0l6 3.2c.2.1.3.2.3.4s-.2.4-.4.5z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/OperateID" class="social-link" aria-label="Twitter">
+                    <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                    </svg>
+                </a>
+                <a href="https://discord.gg/F6NjA5dzZV" class="social-link" aria-label="Discord">
+                    <svg width="24" height="24" viewBox="0 0 33.867 33.867" fill="currentColor">
+                        <path
+                            d="M11.343 5.177c-1.076 0-4.32 1.316-4.902 1.579-.582.263-1.228 1.084-1.961 2.439-.734 1.355-1.323 2.939-2.28 5.269-.956 2.33-1.179 6.822-1.147 8.193.032 1.371.189 2.442 1.594 3.253 1.404.81 2.646 1.658 3.953 2.168 1.308.51 2.2.877 2.806.367.606-.51 1.005-1.403 1.005-1.403s.574-.797-.51-1.275c-1.084-.479-1.626-.814-1.579-1.308.048-.494.127-.765.398-.701.271.064.91 1.211 3.365 1.737s4.848.447 4.848.447 2.394.08 4.849-.447c2.455-.526 3.093-1.673 3.364-1.737.271-.064.35.207.398.7.048.495-.494.83-1.578 1.309-1.084.478-.51 1.275-.51 1.275s.399.892 1.005 1.403c.605.51 1.498.143 2.805-.367 1.307-.51 2.55-1.357 3.954-2.168 1.405-.811 1.562-1.882 1.594-3.253.032-1.37-.191-5.863-1.148-8.193-.956-2.33-1.546-3.914-2.28-5.269-.732-1.355-1.379-2.176-1.96-2.44-.582-.262-3.827-1.578-4.903-1.578-1.076 0-1.394.75-1.394.75l-.375.829s-2.52-.479-3.804-.48c-1.284 0-3.837.48-3.837.48l-.375-.83s-.318-.749-1.395-.749zm.117 9.948h.04c1.569 0 2.84 1.373 2.84 3.066 0 1.694-1.271 3.066-2.84 3.066s-2.84-1.372-2.84-3.066c-.001-1.677 1.247-3.043 2.8-3.066zm10.907 0h.04c1.553.023 2.8 1.39 2.8 3.066 0 1.694-1.271 3.066-2.84 3.066-1.57 0-2.84-1.372-2.84-3.066 0-1.693 1.27-3.066 2.84-3.066z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/operatecrypto" class="social-link" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 48 48" fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24 0C10.747 0 0 11.017 0 24.607c0 10.873 6.877 20.097 16.413 23.35 1.2.228 1.64-.533 1.64-1.183 0-.587-.023-2.525-.033-4.581-6.677 1.488-8.086-2.904-8.086-2.904-1.092-2.844-2.665-3.6-2.665-3.6-2.177-1.528.165-1.496.165-1.496 2.41.173 3.679 2.535 3.679 2.535 2.14 3.762 5.614 2.675 6.984 2.046.215-1.59.837-2.676 1.523-3.29-5.33-.623-10.934-2.733-10.934-12.162 0-2.686.937-4.882 2.473-6.605-.25-.62-1.071-3.123.232-6.512 0 0 2.016-.661 6.602 2.522 1.914-.545 3.968-.818 6.007-.828 2.04.01 4.095.283 6.013.828 4.58-3.183 6.593-2.522 6.593-2.522 1.306 3.39.484 5.892.235 6.512 1.54 1.723 2.47 3.919 2.47 6.605 0 9.452-5.614 11.533-10.959 12.142.861.764 1.628 2.261 1.628 4.557 0 3.292-.027 5.942-.027 6.753 0 .655.432 1.422 1.648 1.18C41.132 44.697 48 35.476 48 24.607 48 11.017 37.255 0 24 0Z" />
+                    </svg>
+                </a>
+                <a href="https://t.me/operatecrypto" class="social-link" aria-label="Telegram">
+                    <svg width="24" height="24" viewBox="0 0 512 512" fill="currentColor">
+                        <path
+                            d="m484.689 98.231-69.417 327.37c-5.237 23.105-18.895 28.854-38.304 17.972L271.2 365.631l-51.034 49.086c-5.647 5.647-10.372 10.372-21.256 10.372l7.598-107.722L402.539 140.23c8.523-7.598-1.848-11.809-13.247-4.21L146.95 288.614 42.619 255.96c-22.694-7.086-23.104-22.695 4.723-33.579L455.423 65.166c18.893-7.085 35.427 4.209 29.266 33.065z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div data-aos="fade-up">
+                <p style="margin-bottom: 1rem;"> Qoboto is a participant of <a href="https://www.OperateID.com"
+                        style="color: var(--electric-cyan); text-decoration: none; font-weight: 500;">www.OperateID.com</a>
+                </p>
+                <p style="margin-bottom: 1rem;"> Qoboto is a certified app of wallet operating system by <a
+                        href="https://www.OperateID.com"
+                        style="color: var(--electric-cyan); text-decoration: none; font-weight: 500;">www.OperateCrypto.com</a>
+                </p>
+                <p style="margin-bottom: 1rem;"> Qoboto is a certified member of Operate Global Business Network</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/OperateID/common.js"></script>
+    <script src="js/OperateID/operateId.js"></script>
+    <script src="js/OperateID/productLlisting.js"></script>
+    <script src="js/OperateID/productLlistingExtra.js"></script>
+</body>
+
+</html>

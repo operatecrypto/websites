@@ -1,0 +1,22 @@
+.w-hidden {
+    display: none;
+}
+
+.right-panel{
+    display:flex; 
+    text-align: right;
+    justify-content: flex-end;
+}
+
+ 
+.btn-secondary {
+       background: rgb(167, 167, 167) !important;
+       color:red;
+}
+.btn-find{
+    min-width:200px;
+}
+
+.btn-small{
+    padding: 6px;;
+}

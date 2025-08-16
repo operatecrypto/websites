@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.min.js"></script>
+    <style>
+        /* General page styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for all content */
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Input box for QR code data */
+        #barcodeText {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.1em;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        #barcodeText:focus {
+            border-color: #0084ff;
+        }
+
+        /* Style for the QR code display */
+        #qrcode {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border: 5px solid #f0f0f0;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        /* Button to reset QR code */
+        .reset-button {
+            background-color: #0084ff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .reset-button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Styling for the footer text */
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>QR of Asset</h1>
+
+        <!-- Textbox for user input -->
+        <input type="text" id="barcodeText" placeholder="Enter QR code data" />
+
+        <!-- Display the generated QR code -->
+        <div id="qrcode"></div>
+
+        <!-- Reset Button -->
+         <!-- Footer -->
+        <div class="footer">
+            <p>Created with ❤️ by <a href="https://www.OperateID.com" target="_blank" style="color: #0084ff;">www.OperateID.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize QR code styling
+        const qrCode = new QRCodeStyling({
+            width: 250,
+            height: 250,
+            margin: 20,
+            data: "",
+            image: null,
+            dotsOptions: {
+                color: "#0084ff",
+                type: "square"
+            },
+            backgroundOptions: {
+                color: "#ffffff"
+            }
+        });
+
+        // Function to set the barcode from query string if present
+        function setBarcodeFromQueryString() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const barcodeData = urlParams.get('barcodeData');
+            
+            if (barcodeData) {
+                // Decode and set the value in the textbox and generate QR Code
+                const decodedData = decodeURIComponent(barcodeData);
+                document.getElementById("barcodeText").value = decodedData;
+                generateBarcode(decodedData);
+            }
+        }
+
+        // Function to generate QR Code
+        function generateBarcode(data) {
+            if (!data || data.trim() === "") {
+                console.error("Invalid data for QR Code");
+                return;
+            }
+
+            // Set the QR code data and generate
+            qrCode.update({
+                data: data
+            });
+            qrCode.append(document.getElementById("qrcode"));
+        }
+
+        // Event listener for when user types in the textbox
+        document.getElementById("barcodeText").addEventListener("input", function () {
+            const barcodeData = document.getElementById("barcodeText").value;
+            generateBarcode(barcodeData);
+        });
+
+        // Initialize the barcode from query string if exists
+        setBarcodeFromQueryString();
+
+        // Function to clear the QR Code and textbox
+        function clearQR() {
+            document.getElementById("barcodeText").value = "";
+            qrCode.update({
+                data: ""
+            });
+            qrCode.append(document.getElementById("qrcode"));
+        }
+    </script>
+
+</body>
+</html>

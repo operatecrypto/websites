@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <style>
+        /* Basic reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4b9dfa;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+            input[type="text"]:focus {
+                border-color: #4b9dfa;
+                box-shadow: 0 0 5px rgba(75, 157, 250, 0.5);
+            }
+
+        svg {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.875rem;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
+
+            input[type="text"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>OperateID.com</h1>
+        <h3>Barcode</h3>
+        <!-- Textbox for user input -->
+        <input type="text" id="barcodeText" placeholder="Enter barcode data" />
+
+        <!-- Display the generated barcode -->
+        <svg id="barcode"></svg>
+
+        <p class="footer">Made with ❤️ by OperateID.com</p>
+    </div>
+
+    <script>
+        // Function to set the barcode from query string if present
+        function setBarcodeFromQueryString() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const barcodeData = urlParams.get('barcodeData');
+
+            if (barcodeData) {
+                // Set the value in the textbox and generate barcode
+                document.getElementById("barcodeText").value = barcodeData;
+                generateBarcode(barcodeData);
+            }
+        }
+
+        // Function to generate barcode
+        function generateBarcode(data) {
+            JsBarcode("#barcode", data, {
+                format: "CODE128",  // Barcode format
+                width: 2,           // Barcode width
+                height: 100,        // Barcode height
+                displayValue: true, // Show the value beneath the barcode
+                fontSize: 20        // Set the font size for the value
+            });
+        }
+
+        // Event listener for when user types in the textbox
+        document.getElementById("barcodeText").addEventListener("input", function () {
+            const barcodeData = document.getElementById("barcodeText").value;
+            generateBarcode(barcodeData);
+        });
+
+        // Initialize the barcode from query string if exists
+        setBarcodeFromQueryString();
+    </script>
+
+</body>
+</html>

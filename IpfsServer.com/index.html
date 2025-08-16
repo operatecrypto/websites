@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPFS Server - Next Gen File Management</title>
+  <meta name="description"
+    content="Turbocharge your Apps using IPFS! Pure Web3, Cloud, and Validator solutions for decentralized file management." />
+  <link rel="shortcut icon" href="public/images/ipfsserver(07).png" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap");
+    @import url("https://fonts.cdnfonts.com/css/made-tommy");
+  </style>
+  <link rel="stylesheet" href="public/css/main.css" />
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">LOADING</div>
+    </div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Cyberpunk Grid Background -->
+  <div class="cyber-grid"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="public/images/ipfsserver(08).png" alt="IPFS Server Logo" />
+      </div>
+      <ul class="nav-links">
+
+      </ul>
+      <!-- Theme toggle button -->
+      <button class="theme-toggle" style="display:none;" id="themeToggle" aria-label="Toggle theme">
+        <div class="toggle-track">
+
+        </div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="glitch" data-text="Turbocharge your Apps using IPFS!">
+        Turbocharge your Apps using IPFS!
+      </h1>
+      <p>
+        Pure Web3, Cloud, and Validator solutions for decentralized file
+        management.
+      </p>
+
+      <div class="feature-cards">
+        <div class="feature-card fade-in">
+          <div>🌐</div>
+          <h3>Pure Web 3</h3>
+          <p>
+            Work independent of centralized servers with fully decentralized
+            infrastructure powered by IPFS
+          </p>
+        </div>
+        <div class="feature-card fade-in">
+          <div>☁️</div>
+          <h3>Cloud</h3>
+          <p>
+            Enterprise-grade systems with advanced security, scalability, and
+            Azure/AWS integration
+          </p>
+        </div>
+        <div class="feature-card fade-in">
+          <div>🔐</div>
+          <h3>Validators</h3>
+          <p>
+            Trust public infrastructure and decentralized protocols for
+            maximum security and transparency
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div>
+    <img src="public/images/image21.gif" class="fade-in bg-image-2" style="width: 100%;" />
+  </div>
+  <!-- Chrome Extension Section -->
+  <section class="chrome-extension">
+    <div class="section-content">
+      <h2 class="fade-in">IPFW Wallet Chrome Extension</h2>
+      <p class="fade-in">
+        Secure and seamless Web3 transactions right from your browser with
+        advanced encryption.
+      </p>
+      <a href="https://chromewebstore.google.com/detail/accumulate-wallet/pmdjifngcmnnafdfmfnnkdpkpjdkficg"
+        class="install-btn fade-in" target="_blank">Install on Chrome</a>
+    </div>
+  </section>
+  <!-- Chrome Extension Section -->
+  <section class="chrome-extension ">
+    <h2 class="fade-in">How does it work?</h2>
+
+    <div class="section-content bg-image-1 image1">
+      <img src="public/images/image2.png" class="fade-in bg-image-2" style="width: 100%;" />
+
+    </div>
+  </section>
+
+  <section class="section" id="demo">
+    <div class="section-content">
+      <h2 class="section-title fade-in">Demo Videos</h2>
+      <div class="solutions-grid">
+        <div class="youtube-video">
+          <p class="fade-in h-50">How to Create an Account in Pinata.cloud</p>
+          <div class="responsive-video">
+            <iframe src="https://www.youtube.com/embed/iE8b0kFwL5w" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div class="youtube-video">
+          <p class="fade-in h-50">Configure IPFS Wallet</p>
+          <div class="responsive-video">
+            <iframe src="https://www.youtube.com/embed/CKT-xH6BZrA" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div class="youtube-video">
+          <p class="fade-in h-50">Signing Document</p>
+          <div class="responsive-video">
+            <iframe src="https://www.youtube.com/embed/XAQstlW9zhI" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div class="youtube-video">
+          <p class="fade-in h-50">Symmetric Wallet Password Based Encryption</p>
+          <div class="responsive-video">
+            <iframe src="https://www.youtube.com/embed/SkGdYgLNfO4" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+
+        <div class="youtube-video">
+          <p class="fade-in h-50">Symmetric Lite Account Based Encryption </p>
+          <div class="responsive-video">
+            <iframe src="https://www.youtube.com/embed/Gx83NluzfL4" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+
+
+        <div class="youtube-video">
+          <p class="fade-in h-50">Symmetric Document Password Based Encryption</p>
+          <div class="responsive-video">
+            <iframe src="https://www.youtube.com/embed/DBnDVxZsa1k" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="youtube-video">
+          <p class="fade-in h-50">How to Manage Providers </p>
+          <div class="responsive-video">
+            <iframe src="https://www.youtube.com/embed/T7OU3NEIHhM" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+
+        <div class="youtube-video">
+          <p class="fade-in h-50">How to generate Reports on the data you have stored on the IPFS Wallet</p>
+          <div class="responsive-video">
+            <iframe src="https://www.youtube.com/embed/UeaC_xTNlG8" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Interface Showcase Section -->
+  <section class="interface-showcase" id="interface">
+    <div class="section-content">
+      <h2 class="section-title fade-in">IPFS App Pages</h2>
+      <p style="
+            text-align: center;
+            color: var(--mid);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+          " class="fade-in">
+        Powerful and intuitive interfaces for managing your decentralized
+        files
+      </p>
+
+      <div class="interface-grid">
+        <div class="interface-card fade-in">
+          <h3>IPFS Operations</h3>
+          <p>
+            Upload, pin, and manage your files with our intuitive IPFS
+            operations interface. Pin files and data to IPFS or unpin files
+            when needed.
+          </p>
+          <div class="interface-image">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IPFS%20operations.JPG-McY3RXxsiBHSEgaLAGMB31omKPBMx4.jpeg"
+              alt="IPFS Operations Interface" />
+          </div>
+        </div>
+
+        <div class="interface-card fade-in">
+          <h3>IPFS Browse Files</h3>
+          <p>
+            Browse, search, and manage your files with comprehensive metadata.
+            Download, view, or decrypt your data with our powerful file
+            browser.
+          </p>
+          <div class="interface-image">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/browse%20files.JPG-0swtG846PsdULBYDaODMlc24syzcFH.jpeg"
+              alt="IPFS Browse Files Interface" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IPFS Providers Section -->
+  <section class="section" id="providers">
+    <div class="section-content">
+      <h2 class="section-title fade-in">IPFS Providers</h2>
+
+      <div class="solutions-grid">
+        <div class="solution-card fade-in">
+          <h3>Manage IPFS Providers</h3>
+          <p>
+            Connect to multiple IPFS providers and manage them all from a
+            single interface. Add, edit, and configure your IPFS providers
+            with ease.
+          </p>
+          <div class="solution-image">
+            <img src="public/images/fore-image-02.gif" />
+          </div>
+        </div>
+
+        <div class="solution-card fade-in">
+          <h3>Provider Configuration</h3>
+          <p>
+            Configure your IPFS providers with advanced settings including API
+            connections, vendor information, and signing settings.
+          </p>
+          <div class="solution-image">
+            <img src="public/images/fore-image-03.gif" />
+          </div>
+        </div>
+
+        <div class="solution-card fade-in">
+          <h3>Provider Management</h3>
+          <p>
+            Add new providers or edit existing ones with our comprehensive
+            management interface. Configure all aspects of your IPFS
+            connections.
+          </p>
+          <div class="solution-image">
+            <img src="public/images/fore-image-01.gif" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- File Operations Section -->
+  <section class="feature-section">
+    <div class="feature-content">
+      <div class="feature-image slide-in-left">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upload-KJsZpN4ud7vOhZ83fSD5xAZJRWpzgN.png"
+          alt="File Pinning Interface" />
+      </div>
+      <div class="feature-text slide-in-right">
+        <h2>Advanced File Operations</h2>
+        <p>
+          Upload, pin, and manage your files with our intuitive IPFS wallet
+          interface. Experience seamless file operations in a decentralized
+          environment with unparalleled security, reliability, and performance
+          optimization. Our advanced encryption settings ensure your data
+          remains secure.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- File Information Section -->
+  <section class="feature-section">
+    <div class="feature-content">
+      <div class="feature-text slide-in-left">
+        <h2>Comprehensive File Information</h2>
+        <p>
+          View detailed information about your files including document name,
+          hash, public URL, and pinning date. Download, unpin, or get file
+          info with just a click. Our system provides complete transparency
+          and control over your decentralized files.
+        </p>
+      </div>
+      <div class="feature-image slide-in-right">
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/..File%20Info.JPG-NXSXm8Dk0rw89wdhZYrklwSYfqcIBw.jpeg"
+          alt="File Information View" />
+      </div>
+    </div>
+  </section>
+
+  <section class="chrome-extension">
+    <img src="public/images/image23.gif" class="fade-in bg-image-2" style="width: 100%;" />
+  </section>
+  <!-- Solutions Section -->
+  <section class="section" id="solutions">
+    <div class="section-content">
+      <h2 class="section-title fade-in">Our Solutions</h2>
+      <div class="solutions-grid">
+        <div class="solution-card fade-in">
+          <h3>Web 3</h3>
+          <p>
+            Our fully Web3 solution eliminates the need for centralized
+            systems. We're developing a series of document management systems
+            built on IPFS to create a robust document platform and studio,
+            empowering every organization to build seamlessly.
+          </p>
+          <div class="solution-image">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/web3-apps-1-XKgjujfq5NlQABubgc4FVku96aJmek.png"
+              alt="Web3 Solution Flow" />
+          </div>
+          <div class="solution-image" style="margin-top: 1rem">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/web3-apps-2-Bvchl5RQOG7OVtqviYjCa5hxkCoqI6.png"
+              alt="Web3 Solution Flow 2" />
+          </div>
+        </div>
+        <div class="solution-card fade-in">
+          <h3>Cloud</h3>
+          <p>
+            Complex applications demand advanced processes and server-side
+            security. Leveraging Azure and AWS, we create an integrated
+            document management experience tailored for enterprises.
+          </p>
+          <div class="solution-image">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cloud-apps-1-wiwqDceXR3QtT6SJX0I8hzBIOuwo9s.png"
+              alt="Cloud Solution Flow" />
+          </div>
+          <div class="solution-image" style="margin-top: 1rem">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cloud-apps-2-2lKxyQhxq5QT74HlYfesOskaQySXm1.png"
+              alt="Cloud Solution Flow 2" />
+          </div>
+        </div>
+        <div class="solution-card fade-in">
+          <h3>Validators</h3>
+          <p>
+            Validators built on blockchain technology that authorize ID-based
+            service provisioning, service requests, and service offerings.
+          </p>
+          <div class="solution-image">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Encryption-spu23ok5sbxG6jIiGNc6ZZeFbQJJtt.png"
+              alt="Validator Solution Interface" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IPFS Wallet Services -->
+  <section class="section" id="ipfs-wallet">
+    <div class="section-content">
+      <h2 class="section-title fade-in">IPFS Wallet App</h2>
+      <p style="
+            text-align: center;
+            color: var(--mid);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+          " class="fade-in">
+        <strong>Integrated with Lighthouse, Pinata and FileCoin</strong><br />
+      </p>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div>📄</div>
+          <h3>White Paper</h3>
+          <p>
+            The whitepaper provides a detailed discussion of the wallet's
+            current encryption and signing capabilities with technical
+            specifications
+          </p>
+          <a href="https://dev.azure.com/HelpDocs/IpfsServer/_wiki/wikis/IpfsServer.wiki/560" target="_blank">Read
+            More</a>
+        </div>
+        <div class="service-card fade-in">
+          <div>💰</div>
+          <h3>Demo Links</h3>
+          <p>
+            Providing multiple examples of encryption and signature
+            verification will simplify the learning process for developers
+          </p>
+          <a href="https://dev.azure.com/HelpDocs/IpfsServer/_wiki/wikis/IpfsServer.wiki/567" target="_blank">Try
+            Demos</a>
+        </div>
+        <div class="service-card fade-in">
+          <div>⏰</div>
+          <h3>Use Cases</h3>
+          <p>
+            Over 20 general-purpose use cases are included here to help you
+            understand the potential applications and implementations
+          </p>
+          <a href="https://dev.azure.com/HelpDocs/IpfsServer/_wiki/wikis/IpfsServer.wiki/564" target="_blank">Explore
+            Use Cases</a>
+        </div>
+        <div class="service-card fade-in">
+          <div>📥</div>
+          <h3>Getting Started</h3>
+          <p>
+            Getting started is simple—the system can be learned in just 4
+            minutes with our comprehensive step-by-step guide
+          </p>
+          <a href="https://dev.azure.com/HelpDocs/IpfsServer/_wiki/wikis/IpfsServer.wiki/662" target="_blank">Start
+            Now</a>
+        </div>
+        <div class="service-card fade-in">
+          <div>☕</div>
+          <h3>FAQ</h3>
+          <p>
+            We've made an effort to gather and answer frequently asked
+            questions about our platform and its capabilities
+          </p>
+          <a href="https://dev.azure.com/HelpDocs/IpfsServer/_wiki/wikis/IpfsServer.wiki/566" target="_blank">View
+            FAQs</a>
+        </div>
+        <div class="service-card fade-in">
+          <div>📈</div>
+          <h3>Updates</h3>
+          <p>
+            Visit this link for monthly updates on our platform's development,
+            new features, and roadmap progress
+          </p>
+          <a href="https://dev.azure.com/HelpDocs/IpfsServer/_wiki/wikis/IpfsServer.wiki/568" target="_blank">Check
+            Updates</a>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item fade-in">
+          <div class="accordion-header">
+            <h3>What is IPFS and how does it work?</h3>
+            <div class="accordion-icon"></div>
+          </div>
+          <div class="accordion-content">
+            <p>
+              IPFS (InterPlanetary File System) is a protocol and peer-to-peer
+              network for storing and sharing data in a distributed file
+              system. IPFS uses content-addressing to uniquely identify each
+              file in a global namespace connecting all computing devices,
+              creating a truly decentralized web infrastructure.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item fade-in">
+          <div class="accordion-header">
+            <h3>How does the IPFS Wallet ensure security?</h3>
+            <div class="accordion-icon"></div>
+          </div>
+          <div class="accordion-content">
+            <p>
+              The IPFS Wallet provides a user-friendly interface to interact
+              with the IPFS network securely. It allows you to upload, pin,
+              and manage files on IPFS, as well as encrypt and sign documents
+              for secure sharing and verification using advanced cryptographic
+              algorithms.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item fade-in">
+          <div class="accordion-header">
+            <h3>Is my data secure and private on IPFS?</h3>
+            <div class="accordion-icon"></div>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Yes, our IPFS Wallet implements edge encryption, ensuring your
+              data is encrypted before it leaves your device. Additionally,
+              our signature verification system ensures data integrity and
+              authenticity in the decentralized ecosystem, providing
+              enterprise-grade security.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners-section" id="partners">
+    <div class="section-content">
+      <h2 class="section-title fade-in">Our Partners</h2>
+
+      <div class="partners-grid">
+        <div class="partner-card fade-in">
+          <h3>Accumulate</h3>
+          <h4>CROWN PARTNER</h4>
+          <img src="public/images/accumulate_foundation.png" alt="Accumulate Foundation" class="partner-logo" />
+          <p>
+            <a href="https://www.AccumulateNetwork.io" target="_blank">AccumulateNetwork.io</a>
+          </p>
+        </div>
+
+        <div class="partner-card fade-in">
+          <h3>Operate Crypto</h3>
+          <h4>Holding Organization</h4>
+          <img src="public/images/Operate-Logo(001).png" alt="Operate Crypto Logo" class="partner-logo" />
+          <p>
+            <a href="https://OperateCrypto.com" target="_blank">OperateCrypto.com</a>
+          </p>
+        </div>
+
+        <div class="partner-card fade-in">
+          <h3>DeFi Devs</h3>
+          <h4>Go-to-Market Partner</h4>
+          <img src="public/images/DefiDevs.png" alt="DeFi Devs Logo" class="partner-logo" />
+          <p><a href="https://defidevs.io" target="_blank">defidevs.io</a></p>
+        </div>
+
+        <div class="partner-card fade-in">
+          <h3>LV8RLABS</h3>
+          <h4>Go-to-Market Partner</h4>
+          <img src="public/images/Logo_lv8rlabs.png" alt="LV8RLABS Logo" class="partner-logo" />
+          <p>
+            <a href="https://www.LV8RLABS.com" target="_blank">LV8RLABS.com</a>
+          </p>
+        </div>
+
+        <div class="partner-card fade-in">
+          <h3>Leonard McDowell</h3>
+          <h4>Go-to-Market Partner</h4>
+          <img src="public/images/Logo_leonardmcdowell.png" alt="Leonard McDowell Logo" class="partner-logo" />
+          <p>
+            <a href="https://www.leonardmcdowell.com/" target="_blank">leonardmcdowell.com</a>
+          </p>
+        </div>
+
+        <div class="partner-card fade-in">
+          <h3>Light House</h3>
+          <h4>IPFS Pinning Service</h4>
+          <img src="public/images/lighthouse_logo.svg" alt="Lighthouse Logo" class="partner-logo" />
+          <p>
+            <a href="https://www.lighthouse.storage" target="_blank">lighthouse.storage</a>
+          </p>
+        </div>
+
+        <div class="partner-card fade-in" style="
+              background: linear-gradient(
+                135deg,
+                rgba(30, 144, 255, 0.1),
+                rgba(65, 105, 225, 0.1)
+              );
+            ">
+          <h3>Want to partner with us?</h3>
+          <div style="text-align: left; margin-top: 1rem">
+            <p>We are searching for:</p>
+            <ul style="margin-top: 1rem; padding-left: 1rem; color: var(--mid)">
+              <li>
+                Integration partnerships with DEPIN and Blockchain AI
+                organizations
+              </li>
+              <li>
+                Integration partnerships with DID specialized organizations
+              </li>
+              <li>
+                Go-to-Market partnerships with Legal companies for KYC and AML
+                products
+              </li>
+              <li>
+                Go-to-Market partnerships with Legal companies for RWA studio
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <img src="public/images/image22.gif" class="fade-in bg-image-2" style="width: 100%;" />
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="section-content">
+      <h2 class="section-title fade-in">Connect With Us</h2>
+      <p class="fade-in" style="
+            color: var(--mid);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            text-align: center;
+          ">
+        Stay updated with our latest developments and join our growing
+        community
+      </p>
+
+      <div class="social-links">
+        <a href="https://www.youtube.com/@operatecrypto" target="_blank" aria-label="YouTube"
+          class="social-link fade-in">
+          <svg class="social-icon" viewBox="0 0 24 24">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+        <a href="https://twitter.com/OperateID" target="_blank" aria-label="Twitter" class="social-link fade-in">
+          <svg class="social-icon" viewBox="0 0 24 24">
+            <path
+              d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+          </svg>
+        </a>
+        <a href="https://discord.gg/your-discord" target="_blank" aria-label="Discord" class="social-link fade-in">
+          <svg class="social-icon" viewBox="0 0 24 24">
+            <path
+              d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+          </svg>
+        </a>
+        <a href="https://t.me/your-telegram" target="_blank" aria-label="Telegram" class="social-link fade-in">
+          <svg class="social-icon" viewBox="0 0 24 24">
+            <path
+              d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-content">
+      <img src="public/images/ipfsserver(08).png" alt="IPFS Server Logo" />
+      <p>© 2025 IPFS Server. All rights reserved.</p>
+      <p>Built for the decentralized future</p>
+      <p>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <div class="floating-btn" id="backToTop">↑</div>
+  <script src="public/script/main.js"></script>
+</body>
+
+</html>
