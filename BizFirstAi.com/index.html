@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizFirst AI - AI Superpower</title>
+    <meta name="description" content="BizFirst AI - AI Framework with AI Agents, Conversations, AI Actions & Rules">
+    <meta name="keywords" content="AI, Machine Learning, AI Agents, Blockchain, Web3">
+    <meta name="author" content="Bank on Ledger">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/common.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="BizFirst AI" class="logo-img">
+                    <!-- <div class="logo-text">
+                        <div class="brand-name">BizFirst AI</div>
+                        <div class="brand-tagline">AI Superpower</div>
+                    </div> -->
+                </div>
+            </a>
+
+            <!-- AI Agent Search Box -->
+            <div class="navbar-search d-none d-lg-flex me-3">
+                <div class="search-container">
+                    <input type="text" class="form-control search-input" placeholder="Search AI Agents..."
+                        id="navSearchInput">
+                    <button class="btn search-btn" type="button" onclick="searchFromNav()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#generative-ai">Video Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agentic-ai">Agentic AI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partners">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ecosystem">Ecosystem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-12">
+                    <div class="hero-main-container" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="hero-content">
+                                    <h1 class="hero-title">
+                                        <span class="gradient-text">AI and ML</span>
+                                    </h1>
+                                    <div class="title-spacing"></div>
+                                    <h2 class="hero-subtitle">
+                                        <i class="fas fa-cube me-3"></i>AI Framework
+                                    </h2>
+
+                                    <div class="hero-features">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div class="feature-item" data-aos="zoom-in" data-aos-delay="400">
+                                                    <i class="fas fa-users-cog feature-icon"></i>
+                                                    <h4>AI Agents</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="feature-item" data-aos="zoom-in" data-aos-delay="500">
+                                                    <i class="fas fa-comments feature-icon"></i>
+                                                    <h4>Conversations</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="feature-item" data-aos="zoom-in" data-aos-delay="600">
+                                                    <i class="fas fa-bolt feature-icon"></i>
+                                                    <h4>AI Actions & Rules</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="feature-item" data-aos="zoom-in" data-aos-delay="700">
+                                                    <i class="fas fa-shield-alt feature-icon"></i>
+                                                    <h4>Establish Trust</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hero-cta" data-aos="fade-up" data-aos-delay="800">
+                                        <a href="https://api.bizfirstai.com/swagger/index.html" class="btn btn-primary">
+                                            <i class="fas fa-rocket me-2"></i>Explore API
+                                        </a>
+                                        <a href="https://app.bizfirstai.com" class="btn btn-outline-light">
+                                            <i class="fas fa-play me-2"></i>Watch Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                                <div class="hero-image-container">
+                                    <img src="images/bg/AI.png"
+                                        alt="AI and ML Framework" class="hero-ai-image">
+                                    <div class="floating-icons">
+                                        <div class="floating-icon" style="--delay: 0s;"><i class="fas fa-robot"></i>
+                                        </div>
+                                        <div class="floating-icon" style="--delay: 1s;"><i class="fas fa-brain"></i>
+                                        </div>
+                                        <div class="floating-icon" style="--delay: 2s;"><i class="fas fa-microchip"></i>
+                                        </div>
+                                        <div class="floating-icon" style="--delay: 3s;"><i
+                                                class="fas fa-network-wired"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </section>
+    <section id="generative-ai" class="tech-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                 <div class="col-lg-12" >
+                    <h2>Watch Demo</h2>
+                   <iframe class="max-width:90vw; width:90vw"  src="https://www.youtube.com/embed/5ca-SRvqwAc?si=an7k89JMPkwfcbqK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>              
+            </div>
+        </div>
+    </section>
+    <!-- Generative AI Use Cases Section -->
+    <section id="generative-ai" class="generative-ai-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">                 
+                <h2><i class="fas fa-magic me-3"></i>Generative AI Use Cases</h2>
+                <p>This visual highlights the core capabilities of Generative AI by demonstrating its most impactful use
+                    cases. At the center lies the AI model, branching out into five key domains of content generation.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="generative-ai-diagram" data-aos="zoom-in" data-aos-duration="1500">
+                        <img src="images/bg/Home.gif" alt="Generative AI Use Cases" class="diagram-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="use-case-card">
+                        <div class="card-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>Video Generation</h4>
+                        <p>Create dynamic video content with AI-powered generation tools</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="use-case-card">
+                        <div class="card-icon">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <h4>Audio Generation</h4>
+                        <p>Synthesize speech and music with advanced AI algorithms</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="use-case-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4>Text Generation</h4>
+                        <p>Generate human-like text for various applications</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="use-case-card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Code Generation</h4>
+                        <p>Automated code creation and programming assistance</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="use-case-card">
+                        <div class="card-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h4>Shape Generation</h4>
+                        <p>3D model and design creation with AI precision</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section id="tech" class="tech-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2><i class="fas fa-layer-group me-3"></i>Technology Stack</h2>
+                <p>Powered by cutting-edge technologies</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="100">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4>Cloud</h4>
+                        <p>AWS | Azure</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="200">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>AI</h4>
+                        <p>Gemini AI | OpenAI | DeepSeek</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="300">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h4>Blockchain</h4>
+                        <p>Accumulate | EVM</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="400">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Security</h4>
+                        <p>Role based Rag</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="500">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>Data Store</h4>
+                        <p>Web3 | Cloud Storage</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="600">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Framework</h4>
+                        <p>AI Agents | Rules Engine</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="images/bg/plugin.gif" width="100%">
+
+    <!-- Agentic AI Architecture Section -->
+    <section id="agentic-ai" class="agentic-ai-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2><i class="fas fa-project-diagram me-3"></i>Agentic AI Architecture</h2>
+                <p>This dynamic framework represents the evolving architecture of Agentic AI — a future-facing approach
+                    where AI doesn't just predict but acts autonomously.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="agentic-diagram-container" data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2025%20will%20be%20the%20year%20of%20Agentic%20AI%2C%20and%20here%20is%20the%20fundamental%20framework%E2%80%A6%20_%20Manthan%20Patel%20_%2019%20comments-jfcSdTGtUJwnCUAzQCRxIUYYPloBHw.gif"
+                            alt="Agentic AI Architecture" class="agentic-diagram">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="architecture-card learning">
+                        <div class="card-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Learning & Adaptation</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>The AI continuously ingests data, trains itself, updates knowledge, and adapts via
+                                feedback and scanning.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Data Ingestion</li>
+                                <li><i class="fas fa-check"></i> Self Training</li>
+                                <li><i class="fas fa-check"></i> Knowledge Updates</li>
+                                <li><i class="fas fa-check"></i> Feedback Adaptation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="architecture-card learning">
+                        <div class="card-header">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h4>Efficiency & Refinement</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Optimizes resource usage, tunes performance, and ensures quality and improvement.</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Resource Optimization</li>
+                                <li><i class="fas fa-check"></i> Performance Tuning</li>
+                                <li><i class="fas fa-check"></i> Quality Assurance</li>
+                                <li><i class="fas fa-check"></i> Continuous Improvement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="architecture-card learning">
+                        <div class="card-header">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Action & Anticipation</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Responds proactively to trends, risks, and opportunities with initiative and foresight.
+                            </p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check"></i> Proactive Response</li>
+                                <li><i class="fas fa-check"></i> Trend Analysis</li>
+                                <li><i class="fas fa-check"></i> Risk Management</li>
+                                <li><i class="fas fa-check"></i> Opportunity Detection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="architecture-footer text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+                <p class="lead">This framework sets the foundation for intelligent agents capable of acting on behalf of
+                    users or systems—paving the way for autonomous businesses, intelligent workflows, and self-healing
+                    operations.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section app-product-listing-section-bizfirstaiagents"
+        id="app-product-listing-section-bizfirstaiagents" >
+        <div class="container">
+            <div class="container mt-5 aml-cert">
+                <div class="app-product-listing-contatiner" id="app-product-listing-contatiner">
+                    <div class="app-product-listing-holder app-product-listing-holder-recent">
+                        <div class="app-product-listing-header">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="text-center mb-4"><i class="fas fa-robot me-3"></i>Recent AI Agents</h2>
+                                    <h4 class="text-center mb-4">On Chain</h4>
+                                    <p class="text-center mb-4">Create your AI Agent and showcase them here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-product-listing-content row">
+                        </div>
+                    </div>
+                    <div class="app-product-listing-holder app-product-listing-holder-top">
+                        <div class="app-product-listing-header">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="text-center mb-4"><i class="fas fa-star me-3"></i>Featured AI Agents</h2>
+                                    <h4 class="text-center mb-4">On Chain</h4>
+                                    <div class="section-spacing"></div>
+                                    <p class="text-center mb-4">Top AI Agents published by app users.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-product-listing-content row">
+                        </div>
+                    </div>
+                    <div class="app-product-listing-templates w-hidden" id="app-product-listing-templates">
+                        <div class="card-template-standard-mini" id="card-template-standard-mini">
+
+                            <div class="list-item-card-smart card text-white col-lg-3" style="background-color:rgb(7, 39, 12)">
+                                <div class="card-header bg-dark">
+                                    <span class="logo"
+                                        style="width: 30px; height: 30px; background-image: url('{@logo}'); background-size: cover;"></span>
+                                    <span class="card-header-text">
+                                        <h5 class="card-title btn-primary" >{@name}</h5>
+                                    </span>
+                                </div>
+                                <div class="card-body"
+                                    style="background-image: url('{@imageurl}'); background-size: cover; background-position: center;font-size:12px; ;">
+                                    <p class="card-text">Created using BizFirst AI</p>
+                                    <p class="">{@shortDescription}</p>
+                                </div>
+                                <div class="card-footer bg-secondary-2 text-white">
+                                    <p>{@code}</p>
+                                    <a href="{@appUrl}" target="_blank"  class="btn btn-secondary btn-small">Visit</a>
+                                    <a href="{@appUrlTestNet}" target="_blank"  class="btn btn-secondary btn-small">Visit Test Net</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AI Agents Section -->
+
+
+    <section class="section app-product-listing-section-bizfirstdatastores"
+        id="app-product-listing-section-bizfirstdatastores" >
+        <div class="container">
+            <div class="container mt-5 aml-cert">
+                <div class="app-product-listing-contatiner" id="app-product-listing-contatiner">
+                    <div class="app-product-listing-holder app-product-listing-holder-recent">
+                        <div class="app-product-listing-header">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="text-center mb-4">Recent AI Data Stores</h1>
+                                    <h4 class="text-center mb-4">On Chain</h4>
+
+                                    <p class="text-center mb-4">
+                                        Create your AI Data Store and showcase them here.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-product-listing-content row">
+                        </div>
+                    </div>
+                    <div class="app-product-listing-holder app-product-listing-holder-top">
+                        <div class="app-product-listing-header">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="text-center mb-4">Featured AI Data Stores</h1>
+                                    <h4 class="text-center mb-4">On Chain</h4>
+
+                                    <p class="text-center mb-4">
+                                        Top AI Data Stores published by app users.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-product-listing-content row">
+                        </div>
+                    </div>
+                    <div class="app-product-listing-templates w-hidden" id="app-product-listing-templates">
+                        <div class="card-template-standard-mini" id="card-template-standard-mini">
+                            <div class="list-item-card card mb-3 text-white aos-init aos-animate" data-aos="fade-right">
+                                <div class="card-header bg-dark">
+                                    <span class="logo"
+                                        style="width: 30px; height: 30px; background-image: url('{@logo}'); background-size: cover;"></span>
+                                    <span class="card-header-text">
+                                        <h5 class="card-title">{@name}</h5>
+                                        <a href="{@appUrl}" target="_blank">Visit</a>
+                                    </span>
+                                </div>
+                                <div class="card-body"
+                                    style="background-image: url('{@imageurl}'); background-size: cover; background-position: center;font-size:12px; ;">
+                                    <p class="card-text">Created using BizFirst AI</p>
+                                    <p class="">{@shortDescription}</p>
+                                </div>
+                                <div class="card-footer bg-secondary-2 text-white">
+                                    <p>{@code}</p>
+                                    <a href="{@appUrlTestNet}" target="_blank">Visit Test Net</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="search-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2><i class="fas fa-search me-3"></i>AI Discovery</h2>
+                <p>Find and explore AI agents and their versions</p>
+                <select class="select-network">
+                    <option value="" selected>Production</option>
+                    <option value="kermit">Kermit</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <div class="search-card">
+                        <div class="card-body">
+                            <div class="search-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h5 class="card-title">AI Agents</h5>
+                            <h6 class="card-subtitle mb-3">Find an AI Agent</h6>
+                            <a href="https://dev.azure.com/HelpDocs/Qoboto.com/_wiki/wikis/Qoboto.com.wiki/886"
+                                class="app-help btn help-link mb-3 d-block" target="_blank"><i
+                                    class="fas fa-question-circle me-2"></i>Learn More</a>
+                            <div class="input-group mb-3">
+                                <input type="text" class="text_identity search-input form-control" name="identity"
+                                    placeholder="Identity of organization. Eg: binoy1.acme/foundationcerts">
+                                <a href_template="https://@identityName.BizFirstAi.com/@identityPath?@network"
+                                    class="btn btn-primary member-link-app-identity-url" target="_blank"><i
+                                        class="fas fa-search me-2"></i>Find</a>
+                            </div>
+                            <a href="#" class="member-link-app-identity-qr-code qr-link"><i
+                                    class="fas fa-qrcode me-2"></i>Find My QR Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left">
+                    <div class="search-card">
+                        <div class="card-body">
+                            <div class="search-icon">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <h5 class="card-title">AI Agent Version</h5>
+                            <h6 class="card-subtitle mb-3">Find previous version of an AI Agent</h6>
+                            <a href="https://dev.azure.com/HelpDocs/Qoboto.com/_wiki/wikis/Qoboto.com.wiki/886"
+                                class="app-help btn help-link mb-3 d-block" target="_blank"><i
+                                    class="fas fa-question-circle me-2"></i>Learn More</a>
+                            <div class="input-group mb-3">
+                                <input type="text" class="text_record_id search-input form-control" name="recordId"
+                                    placeholder="Type your form data record by id. Eg: a3355bd9e4e5044529093b0534fc1b8ea297995241cd5226670912c5300b9451">
+
+                                <a href_template="https://record.LedgerDocuments.com/?search-url-data-entry-id=@record-id@network"
+                                    class="btn btn-primary member-link-app-record-id" target="_blank"><i
+                                        class="fas fa-search me-2"></i>Find Version</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="images/bg/conv.gif" width="100%">
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8" data-aos="zoom-in">
+                    <div class="cta-content">
+                        <i class="fas fa-rocket cta-icon"></i>
+                        <h2>Agentic AI is here!</h2>
+                        <p>Experience the future of artificial intelligence with our comprehensive framework</p>
+                        <a href="#" class="btn btn-light btn-lg mt-4">
+                            <i class="fas fa-book me-2"></i>Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Section -->
+    <section id="ecosystem" class="ecosystem-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2><i class="fas fa-network-wired me-3"></i>Ecosystem Partners</h2>
+                <p>Discover our comprehensive ecosystem of integrated solutions</p>
+            </div>
+            <div class="row" id="ecosystem-grid">
+                <!-- Ecosystem partners will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2><i class="fas fa-handshake me-3"></i>Our Partners</h2>
+                <p>Collaborating with industry leaders to deliver exceptional AI solutions</p>
+            </div>
+            <div class="row" id="partners-grid">
+                <!-- Partners will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2><i class="fas fa-envelope me-3"></i>Contact Us</h2>
+                <p>You can find all updates on our social media channels</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="social-links-container" data-aos="fade-up" data-aos-delay="200">
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/@operatecrypto" target="_blank" class="social-link youtube"
+                                data-aos="zoom-in" data-aos-delay="300">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="https://twitter.com/OperateID" target="_blank" class="social-link twitter"
+                                data-aos="zoom-in" data-aos-delay="400">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://discord.gg/F6NjA5dzZV" target="_blank" class="social-link discord"
+                                data-aos="zoom-in" data-aos-delay="500">
+                                <i class="fab fa-discord"></i>
+                                <span>Discord</span>
+                            </a>
+                            <a href="https://github.com/operatecrypto" target="_blank" class="social-link github"
+                                data-aos="zoom-in" data-aos-delay="600">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://t.me/operatecrypto" target="_blank" class="social-link telegram"
+                                data-aos="zoom-in" data-aos-delay="700">
+                                <i class="fab fa-telegram"></i>
+                                <span>Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content text-center">
+                <div class="footer-logo" data-aos="fade-up">
+                    <img src="images/logo.png" alt="BizFirst AI" class="footer-logo-img">
+                </div>
+
+
+
+                <div class="footer-social" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://www.youtube.com/@operatecrypto" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/OperateID" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://discord.gg/F6NjA5dzZV" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://github.com/operatecrypto" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://t.me/operatecrypto" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+
+                <div class="footer-bottom" data-aos="fade-up" data-aos-delay="600">
+                    <p>&copy; 2024 BizFirst AI. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/components.js"></script>
+
+    
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/OperateID/common.js"></script>
+    <script src="js/OperateID/operateId.js"></script>
+    <script src="js/OperateID/productLlisting.js"></script>
+    <script src="js/OperateID/productLlistingExtra.js"></script>
+</body>
+
+</html>

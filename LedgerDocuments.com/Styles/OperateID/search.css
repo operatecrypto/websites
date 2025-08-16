@@ -1,0 +1,68 @@
+.search-card {
+    background-image: none !important;
+    background: none !important;
+    box-shadow: 0 4px 10px rgba(190, 186, 186, 0.05), 0 1px 3px rgba(76, 7, 249, 0.1);
+    border-color: rgb(11, 11, 12);
+    border-width:1px;
+}
+
+.search-card>.card-body {
+    background-size: cover;
+    background-position: center;
+    font-size: 12px;
+    display: flex;
+    flex-wrap:wrap-reverse;
+    flex-direction: column;
+}
+.search-card>.card-body>input {
+    flex: 1;
+    background-color: black;
+}
+
+.search-card>.card-body>* {
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 3px;
+}
+
+
+.select-network {
+    width: min-content;
+   
+    margin: 0px 5px;
+
+    border-radius: 3px;
+
+    
+}
+
+.text_identity {
+    padding: 10px;
+}
+.types-section,
+.search-section{
+ background-image: url("../../Images/bg/image4.png") ;
+      background-repeat: no-repeat;
+  background-size: cover; /* or use 'contain' or specific dimensions */
+  background-position: center;
+  background-attachment: fixed;
+}
+.architecture-section{
+     background-image: url("../../Images/bg/image3.png") ;
+      background-repeat: no-repeat;
+  background-size: cover; /* or use 'contain' or specific dimensions */
+  background-position: center;
+  background-attachment: fixed;
+  color:white
+}
+.tech-section  .tech-card,
+.contact-section{
+ background-image: url("../../Images/bg/image5.png") ;
+      background-repeat: no-repeat;
+  background-size: cover; /* or use 'contain' or specific dimensions */
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+

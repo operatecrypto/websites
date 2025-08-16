@@ -1,0 +1,63 @@
+.a   {
+ /*   opacity: 0;
+    transform: scale(0.5);*/
+}
+
+@keyframes expands {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@supports (animation-timeline: view()) {
+    .animated-element {
+        animation: expands 0.5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+}
+
+
+
+
+
+
+
+.twist-image {
+    width: 300px;
+    height: 300px;
+    background-image: url('https://via.placeholder.com/300');
+    background-size: cover;
+    background-position: center;
+    display: block;
+    border-radius: 15px;
+    opacity: 0;
+    transform: rotate(0deg); /* Initial position */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@keyframes twistOnScroll {
+    from {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(360deg); /* Full twist */
+    }
+}
+
+/* Scroll-driven animation */
+@supports (animation-timeline: view()) {
+    .twist-image {
+        animation: twistOnScroll 1s ease-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%; /* Trigger animation when 50% of the element is visible */
+    }
+}

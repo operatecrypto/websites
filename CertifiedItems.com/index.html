@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certified Items - Modern Certificate Management</title>
+    <meta name="description" content="Issue and manage certificates with blockchain technology">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/OperateID/common.css">
+    <link rel="stylesheet" href="css/OperateID/listing.css">
+    <link rel="stylesheet" href="css/OperateID/search.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle"></div>
+                <span>Certified Items</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo-ci.jpg" alt="CI Logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-main">Certified Items</span>
+                    <span class="logo-sub">Certify Anything | Anyone | Anywhere</span>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#technology" class="nav-link">Technology</a>
+                <a href="#partners" class="nav-link">Partners</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Issue Digital</span>
+                    <span class="title-line glow-text">Certificates</span>
+                    <span class="title-line">with Blockchain</span>
+                </h1>
+                <p class="hero-description">
+                    Be an authority in the digital world. Create, verify, and manage certificates for tests, awards,
+                    people, or anything with our blockchain-powered platform.
+                </p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Schools & Academies</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>Awards & Achievements</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-code"></i>
+                        <span>Software Licenses</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary glow-btn">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="certificate-mockup">
+                    <div class="certificate-card">
+                        <div class="certificate-header">
+                            <div class="cert-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3>Certificate of Achievement</h3>
+                        </div>
+                        <div class="certificate-body">
+                            <p>This certifies that</p>
+                            <h4>John Doe</h4>
+                            <p>has successfully completed</p>
+                            <h5>Blockchain Development Course</h5>
+                        </div>
+                        <div class="certificate-footer">
+                            <div class="blockchain-badge">
+                                <i class="fas fa-link"></i>
+                                <span>Blockchain Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Search Section -->
+    <section id="search" class="search-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Your Certificates</h2>
+                <p>Search for certificates or manage your certificate store</p>
+                <div class="network-selector" style="text-align: center;">
+                    <select class="select-network" style="max-width: 150px;text-align: center;">
+                        <option value="" selected>Production</option>
+                        <option value="kermit">Kermit</option>
+                    </select>
+                </div>
+            </div>
+            <div class="search-cards">
+
+                <div class="search-card">
+                    <div class="card-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>For Certifiers</h3>
+                    <p>Manage your certificate store and issue new certificates</p>
+
+                    <div class="search-form">
+                        <div class="input-group">
+                            <input type="text" class="text_identity form-input"
+                                placeholder="Identity of organization (e.g., binoy1.acme/foundationcerts)">
+
+                            <a href_template="https://@identityName.CertifiedItems.com/@identityPath?@network"
+                                class="btn btn-primary member-link-app-identity-url" target="_blank">
+                                <i class="fas fa-search"></i>Find by Store Name
+                            </a>
+                        </div>
+                        <a href="#" class="qr-link member-link-app-identity-qr-code btn-find">
+                            <i class="fas fa-qrcode"></i> Find Store QR Code
+                        </a>
+                    </div>
+                </div>
+                <div class="search-card">
+                    <div class="card-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>For Certificate Holders</h3>
+                    <p>View and verify your certificates</p>
+                    <div class="search-form">
+                        <div class="input-group">
+                            <input type="text" class="text_record_id search-input form-input" name="recordId"
+                                placeholder="Enter certificate ID (e.g., a3355bd9e4e5044529093b0534fc1b8ea297995241cd5226670912c5300b9451)">
+
+                            <a href_template="https://record.CertifiedItems.com/?search-url-data-entry-id=@record-id@network"
+                                class="btn btn-primary member-link-app-record-id" target="_blank">Find by ID</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section app-product-listing-section" id="app-product-listing-section">
+        <div class="app-product-listing-contatiner container" id="app-product-listing-contatiner">
+            <br><br>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Certificate Stores</h2>
+                <p>Explore stores in the market place</p>
+            </div>
+
+            <div class="app-product-listing-holder app-product-listing-holder-recent">
+                <div class="section-header" data-aos="fade-up">
+                    <h3>Recent Stores</h3>
+                </div>
+                <div class="app-product-listing-content listing-grid">
+                    <img src="Images/Animations/loading.gif"
+                        style="height: 200px;width: 100%; margin-top: 20px;border-radius: 5px;;">
+                </div>
+            </div>
+
+            <div class="app-product-listing-holder app-product-listing-holder-top">
+                <div class="section-header" data-aos="fade-up">
+                    <h3>Featured Stores</h3>
+                </div>
+                <div class="app-product-listing-content listing-grid">
+                    <img src="Images/Animations/loading.gif"
+                        style="height: 200px;width: 100%; margin-top: 20px;border-radius: 5px;;">
+                </div>
+            </div>
+        </div>
+        <div class="app-product-listing-templates w-hidden" id="app-product-listing-templates">
+            <div class="card-template-standard-mini" id="card-template-standard-mini">
+                <div class="listing-card document-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                    </div>
+                    <span class="item-logo" style="background-image: url('{@logo}');"></i></span>
+                    <span class="card-header-text">
+                        <h3 class="item-card-title">{@name}</h3>
+                    </span>
+                    <div class="listing-badge item-card-visit"> <a href="{@appUrl}" target="_blank"
+                            class="btn btn-primary">Visit</a>
+
+                    </div>
+                    <div class="card-body"
+                        style="background-image: url('{@imageurl}'); background-size: cover; background-position: center;font-size:12px; ;">
+                        <p class="item-card-product-code">{@code}</p>
+                        <p class="item-card-description">{@shortDescription}</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="item-card-visit-testnet"> <a href="{@appUrlTestNet}" target="_blank">Visit Test
+                                Net</a>
+                            <p class="item-card-subtitle" style="font-size: 10px;;">Created using Document Ledger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certificate Types</h2>
+                <p>Create various types of certificates for different purposes</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Certificate of Examination</h3>
+                    <p>Issue certificates for completed examinations and tests</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Certificate of Achievement</h3>
+                    <p>Recognize outstanding performance and accomplishments</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Certificate of Training</h3>
+                    <p>Document completed training programs and workshops</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Certificate of Attendance</h3>
+                    <p>Verify attendance at events, conferences, and seminars</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Software License</h3>
+                    <p>Manage software licenses and access rights</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Custom Templates</h3>
+                    <p>Create personalized certificate templates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powered by Advanced Technology</h2>
+                <p>Built on cutting-edge blockchain and verification systems</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Accumulate Blockchain</h3>
+                    <p>Stores proof of certification and validity on a secure, decentralized network</p>
+                    <div class="tech-features">
+                        <span class="tech-tag">Immutable</span>
+                        <span class="tech-tag">Secure</span>
+                        <span class="tech-tag">Transparent</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Attestation Engine</h3>
+                    <p>Custom validator that verifies transactions based on participant certificates</p>
+                    <div class="tech-features">
+                        <span class="tech-tag">Automated</span>
+                        <span class="tech-tag">Reliable</span>
+                        <span class="tech-tag">Fast</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Web3 Wallet Integration</h3>
+                    <p>Seamlessly create and manage your digital identity and certificates</p>
+                    <div class="tech-features">
+                        <span class="tech-tag">User-Friendly</span>
+                        <span class="tech-tag">Integrated</span>
+                        <span class="tech-tag">Secure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple steps to get started with digital certificates</p>
+            </div>
+            <div class="process-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="business">For Businesses</button>
+                    <button class="tab-btn" data-tab="individual">For Individuals</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="business">
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Create Identity</h3>
+                                    <p>Set up your organization's digital identity and keybook</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Setup Certificate Store</h3>
+                                    <p>Create your certificate management system</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Issue Certificates</h3>
+                                    <p>Send certificates directly to recipients' digital wallets</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="individual">
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Create Identity</h3>
+                                    <p>Quick 1-minute setup for your digital identity</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Create Digital Wallet</h3>
+                                    <p>Set up your personal certificate storage</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Share & Verify</h3>
+                                    <p>Save your certificate & share with the world</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Partners</h2>
+                <p>Working with industry leaders to deliver the best solutions</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card crown-partner">
+                    <div class="partner-badge">Crown Partner</div>
+                    <div class="partner-logo">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Accumulate</h3>
+                    <p>Layer 1 Blockchain</p>
+                    <a href="https://www.AccumulateNetwork.io" class="partner-link">AccumulateNetwork.io</a>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Operate ID</h3>
+                    <p>Holding Organization</p>
+                    <a href="https://OperateID.com" class="partner-link">OperateID.com</a>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>DeFi Devs</h3>
+                    <p>Go-to-Market Partner</p>
+                    <a href="https://defidevs.io" class="partner-link">defidevs.io</a>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>LV8RLABS</h3>
+                    <p>Go-to-Market Partner</p>
+                    <a href="https://www.LV8RLABS.com" class="partner-link">LV8RLABS.com</a>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Light House</h3>
+                    <p>IPFS Pinning Service</p>
+                    <a href="https://www.lighthouse.storage" class="partner-link">lighthouse.storage</a>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Cubane</h3>
+                    <p>Layer One Integration</p>
+                    <a href="https://cubane.space" class="partner-link">cubane.space</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start issuing digital certificates? Contact us today</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Contact Us</h3>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@operatecrypto" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com/OperateID" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://discord.gg/F6NjA5dzZV" class="social-link">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://github.com/operatecrypto" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://t.me/operatecrypto" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-info partner-card">
+                    Start your own certificate store? First 100 certificates are free! <br>
+                    Lowest cost - Imagine $1 cost for 250 certificates<br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <span>Certified Items</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#technology">Technology</a>
+                    <a href="#partners">Partners</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.youtube.com/@operatecrypto" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com/OperateID" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://discord.gg/F6NjA5dzZV" class="social-link">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://github.com/operatecrypto" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Certified Items. Powered by <a href="https://www.OperateID.com">OperateID.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/OperateID/common.js"></script>
+    <script src="js/OperateID/operateId.js"></script>
+    <script src="js/OperateID/productLlisting.js"></script>
+    <script src="js/OperateID/productLlistingExtra.js"></script>
+</body>
+
+</html>

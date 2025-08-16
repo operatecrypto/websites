@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank On Ledger - Your Digital Bank</title>
+    <meta name="description" content="Manage your digital assets with Bank On Ledger - Your Digital Bank">
+    <link rel="shortcut icon" href="images/Logos/BOL-LogoV2(02).png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/OperateID/common.css">
+    <link rel="stylesheet" href="css/OperateID/listing.css">
+    <link rel="stylesheet" href="css/OperateID/search.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-inner">
+
+                <div class="loader-line-wrap">
+                    <div class="loader-line-1">
+                        <img src="images/Logos/BOL-LogoV2(01).png" alt="Bank On Ledger" class="logo-img">
+                    </div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line-1">
+                        <img src="images/Logos/BOL-LogoV2(01).png" alt="Bank On Ledger" class="logo-img">
+                    </div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line-1">
+                        <img src="images/Logos/BOL-LogoV2(01).png" alt="Bank On Ledger" class="logo-img">
+                    </div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line-1">
+                        <img src="images/Logos/BOL-LogoV2(01).png" alt="Bank On Ledger" class="logo-img">
+                    </div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line-1">
+                        <img src="images/Logos/BOL-LogoV2(01).png" alt="Bank On Ledger" class="logo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/Logos/BOL-LogoV2(01).png" alt="Bank On Ledger" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">Bank on Ledger</span>
+                    <span class="logo-subtitle">Your Digital Bank</span>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#app-product-listing-section" class="nav-link">Search</a>
+                <a href="#technology" class="nav-link">Technology</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#partners" class="nav-link">Partners</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Manage Your</span>
+                    <span class="title-line highlight">Digital Assets</span>
+                </h1>
+                <p class="" style="color: silver;">
+                    Experience the future of digital banking with Bank On Ledger
+                </p>
+                <p class="hero-description">
+                    Define and manage your digital identity with our secure, blockchain-based platform <br>
+                </p>
+
+                <div class="hero-features">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Bank on Ledger</h3>
+                        <p>Decentralized identity data store. Trusted data source.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>ID Store</h3>
+                        <p>Your digital ID store with OperateID technology</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>On Chain</h3>
+                        <p>Blockchain trust and certificate store</p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="scrollToSection('search')">
+                        Get Started
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <a class="btn btn-outline"
+                        href="https://dev.azure.com/HelpDocs/BankOnLedger.com/_wiki/wikis/BankOnLedger.com.wiki/864"
+                        target="_blank">
+                        <i class="fas fa-question-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="section app-product-listing-section search-section" id="app-product-listing-section">
+
+        <div class="container">
+   
+            <div class="section-header">
+                <h2 class="section-title">Find Your Bank</h2>
+                <p class="section-subtitle">Search for banks of individuals and businesses</p>
+            </div>
+            <div class="search-container">
+                <div class="network-selector">
+                    <select class="select-network">
+                        <option value="" selected>Production</option>
+                        <option value="kermit">Kermit</option>
+                    </select>
+                </div>
+            </div>
+            <div class="search-card">
+                <div class="search-methods">
+                    <div class="search-method">
+                        <h3><i class="fas fa-search"></i> Search by Bank Name</h3>
+                        <div class="input-group">
+                            <input type="text" class="text_identity"
+                                placeholder="Enter identity (e.g., DallasGunSellers or DallasGunSellers.acme/Competition2025)">
+
+                            <a href_template="https://@identityName.BankOnLedger.com/@identityPath?@network"
+                                class="btn btn-primary member-link-app-identity-url" target="_blank"><i
+                                    class="fas fa-search"></i>Find by Name</a>
+
+                        </div>
+                        <a href="#" class="qr-link member-link-app-identity-qr-code btn-find">
+                            <i class="fas fa-qrcode"></i> Find My QR Code
+                        </a>
+                    </div>
+                    <div class="search-method">
+                        <h3><i class="fas fa-fingerprint"></i> Search by Bank ID</h3>
+                        <div class="input-group">
+                             <input type="text" class="text_record_id search-input" name="recordId"
+                        placeholder="Enter Bank ID (e.g., a3355bd9e4e5044529093b0534fc1b8ea297995241cd5226670912c5300b9451)">
+           
+                            <a href_template="https://@identityName.BankOnLedger.com/@identityPath?@network"
+                                class="btn btn-primary member-link-app-record-id btn-find" target="_blank"><i
+                                    class="fas fa-search"></i>Find by ID</a> 
+                        </div>
+                    </div>
+                    <div class="right-panelx">
+                        <a href="https://dev.azure.com/HelpDocs/BankOnLedger.com/_wiki/wikis/BankOnLedger.com.wiki/864"
+                                    class="btn btn-secondary btn-small" target="_blank">Learn More</a>
+                    </div> 
+                </div>
+            </div>
+
+
+            <div class="row align-items-center">
+                        
+                <div class="col-lg-12">
+                    <div class="app-product-listing-contatiner" id="app-product-listing-contatiner">
+               
+                        <div class="app-product-listing-holder app-product-listing-holder-recent">
+                            <div class="app-product-listing-header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h1 class="text-center mb-4">Recent Banks</h1>
+                                        <p class="text-center mb-4">
+                                            Create your bank and showcase them here.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-product-listing-content listing-grid">
+                                <img src="Images/Animations/loading.gif"
+                                    style="height: 200px;width: 100%; margin-top: 20px;border-radius: 5px;;">
+                            </div>
+                        </div>
+                        <div class="app-product-listing-holder app-product-listing-holder-top">
+                            <div class="app-product-listing-header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h1 class="text-center mb-4">Featured Banks</h1>
+                                        <p class="text-center mb-4">
+                                            Top banks published by app users.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-product-listing-content listing-grid">
+                            </div>
+                        </div>
+                        <div class="app-product-listing-templates w-hidden" id="app-product-listing-templates">
+                            <div class="card-template-standard-mini tech-grid" id="card-template-standard-mini">
+                                <div class="listing-card tech-card">                                                     
+                                    <div class="card-header">
+                                        <div class="listing-badge"> <a class="btn btn-primary btn-small" href="{@appUrl}" target="_blank">Visit</a></div>
+                                        <span class="logo"
+                                            style="width: 30px; height: 30px; background-image: url('{@logo}'); background-size: cover;"></span>
+                                        <span class="card-header-text">
+                                            <h5 class="card-title">{@name}</h5>
+                                        </span>
+                                        <p class="card-text" style="font-size: 10px;;">Created using BankOnLedger.com</p>
+                                    </div>
+                                    <div class="card-body"
+                                        style="background-image: url('{@imageurl}'); background-size: cover; background-position: center;font-size:12px; ;">
+                                        <p>{@code}</p <p class="">{@shortDescription}</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class=""> <a class="btn btn-small" href="{@appUrlTestNet}" target="_blank">Visit Test Net</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Technology Section -->
+    <section id="technology" class="tech-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technology Stack</h2>
+                <p class="section-subtitle">Powered by cutting-edge blockchain and cloud technologies</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Manage Store</h3>
+                    <p>Blockchain Storage</p>
+                </div>
+
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Manage Attestation</h3>
+                    <p>Rules engine & Multi-sig</p>
+                </div>
+
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-icon">
+                        <i class="fas fa-ethereum"></i>
+                    </div>
+                    <h3>EVM</h3>
+                    <p>Account Abstraction</p>
+                </div>
+
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Cloud</h3>
+                    <p>AWS | Azure</p>
+                </div>
+
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="tech-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Schema Models</h3>
+                    <p>Discovery | Meta-L</p>
+                </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="tech-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>AI MCP Server</h3>
+                    <p>Access through AI Agents</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ID Validations</h2>
+                <p class="section-subtitle">Open data that enhances trust and security</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Accumulate</h3>
+                    <div class="service-features">
+                        <span class="feature-tag">Blockchain</span>
+                        <span class="feature-tag">Certification</span>
+                    </div>
+                    <p>A blockchain that stores proof of certification and validity.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Attestation Engine</h3>
+                    <div class="service-features">
+                        <span class="feature-tag">Validation</span>
+                        <span class="feature-tag">Security</span>
+                    </div>
+                    <p>A custom validator that approves transactions based on certificates of participants.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Web 3 Wallet</h3>
+                    <div class="service-features">
+                        <span class="feature-tag">Web3</span>
+                        <span class="feature-tag">Wallet</span>
+                    </div>
+                    <p>Create and update your digital bank with our secure wallet solution.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>BankOnLedger Explorer</h3>
+                    <div class="service-features">
+                        <span class="feature-tag">Explorer</span>
+                        <span class="feature-tag">Data</span>
+                    </div>
+                    <p>Browse anyone's data store with our comprehensive explorer.</p>
+                    <a href="https://www.BankOnLedger.com" class="service-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>AML Compliance</h3>
+                    <div class="service-features">
+                        <span class="feature-tag">AML</span>
+                        <span class="feature-tag">Compliance</span>
+                    </div>
+                    <p>Create an AML certification store and issue certificates.</p>
+                    <a href="https://www.AMLOnChain.com" class="service-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>KYC Verification</h3>
+                    <div class="service-features">
+                        <span class="feature-tag">KYC</span>
+                        <span class="feature-tag">Verification</span>
+                    </div>
+                    <p>Create a KYC certification store and issue certificates.</p>
+                    <a href="https://www.KYCOnChain.com" class="service-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section id="integrations" class="integrations-section">
+        <div class="container">
+            <div class="integration-content">
+                <div class="integration-text">
+                    <h2 class="section-title">Integrations</h2>
+                    <div class="integration-list">
+                        <div class="integration-item" data-aos="fade-right" data-aos-delay="100">
+                            <h3>Operate ID</h3>
+                            <p>Your digital identity management solution</p>
+                            <a href="https://www.OperateId.com" target="_blank" class="integration-link">
+                                OperateId.com <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="integration-item" data-aos="fade-right" data-aos-delay="200">
+                            <h3>Powered by</h3>
+                            <p>Advanced cryptocurrency operations platform</p>
+                            <a href="https://www.OperateCrypto.com" target="_blank" class="integration-link">
+                                OperateCrypto.com <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="integration-item" data-aos="fade-right" data-aos-delay="300">
+                            <h3>Stored in</h3>
+                            <p>Secure blockchain network infrastructure</p>
+                            <a href="https://www.AccumulateNetwork.io" target="_blank" class="integration-link">
+                                AccumulateNetwork.io <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="integration-visual" data-aos="fade-left">
+                    <div class="integration-diagram">
+                        <div class="diagram-node node-1">
+                            <i class="fas fa-user"></i>
+                            <span>User</span>
+                        </div>
+                        <div class="diagram-node node-2">
+                            <i class="fas fa-database"></i>
+                            <span>ID Store</span>
+                        </div>
+                        <div class="diagram-node node-3">
+                            <i class="fas fa-link"></i>
+                            <span>Blockchain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Sections -->
+    <section id="demo-individual" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">For Individuals</h2>
+                <p class="section-subtitle">Identity is made easy</p>
+            </div>
+
+            <div class="demo-grid">
+                <div class="demo-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="demo-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Create Identity</h3>
+                    <p>A simple 1 minute step to establish your digital presence</p>
+                    <a href="https://dev.azure.com/HelpDocs/BankOnLedger.com/_wiki/wikis/BankOnLedger.com.wiki/866"
+                        target="_blank" class="demo-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="demo-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="demo-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Create a Bank</h3>
+                    <p>Simple 1 minute step to create your ID data store</p>
+                    <a href="https://dev.azure.com/HelpDocs/BankOnLedger.com/_wiki/wikis/BankOnLedger.com.wiki/875"
+                        target="_blank" class="demo-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="demo-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="demo-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Edit and Share</h3>
+                    <p>Edit your bank information and share with the world</p>
+                    <a href="https://dev.azure.com/HelpDocs/BankOnLedger.com/_wiki/wikis/BankOnLedger.com.wiki/877"
+                        target="_blank" class="demo-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo-business" class="demo-section business-demo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">For Businesses</h2>
+                <p class="section-subtitle">Create an ID for your DAO</p>
+            </div>
+
+            <div class="demo-grid">
+                <div class="demo-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="demo-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Create an Identity</h3>
+                    <p>Create an ADI and also a keybook for your organization</p>
+                </div>
+
+                <div class="demo-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="demo-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Setup Multi-signature</h3>
+                    <p>Many people, organizations and devices can be added to the keybook</p>
+                </div>
+
+                <div class="demo-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="demo-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Share your ID</h3>
+                    <p>Share the ID with collaborators and business partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Partners</h2>
+                <p class="section-subtitle">Working with industry leaders to deliver excellence</p>
+            </div>
+
+            <div class="partners-grid">
+                <div class="partner-card crown-partner" data-aos="flip-left" data-aos-delay="100">
+                    <div class="partner-badge">Crown Partner</div>
+                    <img src="images/Logos/accumulate_foundation.png" alt="Accumulate" class="partner-logo">
+                    <h3>Accumulate</h3>
+                    <p>Layer 1 Blockchain</p>
+                    <a href="https://www.AccumulateNetwork.io" target="_blank" class="partner-link">
+                        AccumulateNetwork.io <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="partner-card scale-in-elegant" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/Logos/operatecrypo_logo.png" alt="Operate Crypto" class="partner-logo">
+                    <h3>Operate OD</h3>
+                    <p>Digital Identity & Blockchain Solutions</p>
+                    <a href="https://OperateID.com" target="_blank">OperateID.com</a>
+                </div>
+
+                <div class="partner-card scale-in-elegant" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/Logos/DefiDevs.png" alt="DeFi Devs" class="partner-logo">
+                    <h3>DeFi Devs</h3>
+                    <p>Go-to-Market & DeFi Solutions</p>
+                    <a href="https://defidevs.io" target="_blank">defidevs.io</a>
+                </div>
+
+                <div class="partner-card scale-in-elegant" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images/Logos/Logo_lv8rlabs.png" alt="LV8RLABS" class="partner-logo">
+                    <h3>LV8RLABS</h3>
+                    <p>Innovation & Technology Acceleration</p>
+                    <a href="https://www.LV8RLABS.com" target="_blank">LV8RLABS.com</a>
+                </div>
+
+                <div class="partner-card scale-in-elegant" data-aos="fade-up" data-aos-delay="500">
+                    <img src="images/Logos/Logo_leonardmcdowell.png" alt="Leonard McDowell" class="partner-logo">
+                    <h3>Leonard McDowell</h3>
+                    <p>Strategic Consulting & Market Development</p>
+                    <a href="https://www.leonardmcdowell.com/" target="_blank">leonardmcdowell.com</a>
+                </div>
+
+                <div class="partner-card scale-in-elegant" data-aos="fade-up" data-aos-delay="600">
+                    <img src="images/Logos/lighthouse_logo.jpeg" alt="Lighthouse" class="partner-logo">
+                    <h3>Lighthouse Storage</h3>
+                    <p>Decentralized IPFS Pinning Service</p>
+                    <a href="https://www.lighthouse.storage" target="_blank">lighthouse.storage</a>
+                </div>
+
+                <div class="partner-card scale-in-elegant" data-aos="fade-up" data-aos-delay="700">
+                    <img src="images/Logos/cubane logo.png" alt="Cubane" class="partner-logo">
+                    <h3>Cubane</h3>
+                    <p>Layer One Blockchain Integration</p>
+                    <a href="https://cubane.space" target="_blank">cubane.space</a>
+                </div>
+
+                <div class="partner-card scale-in-elegant" data-aos="fade-up" data-aos-delay="800">
+                    <img src="images/Logos/presentcrypto_logo.jpeg" alt="Present Crypto" class="partner-logo">
+                    <h3>Present Crypto</h3>
+                    <p>Marketing & Community Building</p>
+                    <a href="https://PresentCrypto.com" target="_blank">PresentCrypto.com</a>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch with our team</p>
+            </div>
+
+
+            <div class="contact-content">
+                <div class="contact-info">
+
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h3>Website</h3>
+                            <a href="https://www.OperateID.com" target="_blank">www.OperateID.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@operatecrypto" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com/OperateID" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://discord.gg/F6NjA5dzZV" target="_blank" class="social-link">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://github.com/operatecrypto" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://t.me/operatecrypto" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="partnership-cta" data-aos="fade-up">
+                <h3>Want to partner with us?</h3>
+                <p>We are searching for integration and go-to-market partnerships</p>
+                <ul class="partnership-list">
+                    <li>Integration partnerships with DEPIN and Blockchain AI organizations</li>
+                    <li>Integration partnerships with DID specialized organizations</li>
+                    <li>Go-to Market partnerships with Legal companies for KYC and AML products</li>
+                    <li>Go-to Market partnerships with Legal companies for RWA studio</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/Logos/BOL-LogoWordV2(01).png" alt="Operate ID" class="footer-logo-img">
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-social">
+                        <a href="https://www.youtube.com/@operatecrypto" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com/OperateID" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://discord.gg/F6NjA5dzZV" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://github.com/operatecrypto" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/operatecrypto" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bank On Ledger. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/modern-script.js"></script>
+    <script src="js/OperateID/common.js"></script>
+    <script src="js/OperateID/operateId.js"></script>
+    <script src="js/OperateID/productLlisting.js"></script>
+    <script src="js/OperateID/productLlistingExtra.js"></script>
+</body>
+
+</html>
